@@ -1,0 +1,24 @@
+|TrafficDecoder
+MRED <= 1.DB_MAX_OUTPUT_PORT_TYPE
+B => 1.IN0
+B => inst10.IN1
+B => inst1.IN0
+B => 4.IN0
+B => inst7.IN1
+C => 1.IN1
+C => inst10.IN0
+C => inst.IN0
+C => inst9.IN0
+C => 6.IN0
+MYELLOW <= 2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst10.IN2
+A => inst11.IN2
+A => inst2.IN0
+A => inst9.IN2
+A => inst7.IN2
+MGREEN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+SRED <= 4.DB_MAX_OUTPUT_PORT_TYPE
+SYELLOW <= 5.DB_MAX_OUTPUT_PORT_TYPE
+SGREEN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
