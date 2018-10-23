@@ -1,0 +1,17 @@
+|TLController
+T8 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst8.ACLR
+reset => inst7.PRESET
+reset => inst6.PRESET
+clk => inst8.CLK
+clk => inst6.CLK
+clk => inst7.CLK
+done => inst18.IN0
+done => inst19.IN1
+sensor => inst19.IN0
+T4 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Z2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Z1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Z0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
