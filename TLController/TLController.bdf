@@ -85,7 +85,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1224 376 1400 392)
+	(rect 1224 392 1400 408)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "T8" (rect 90 0 101 12)(font "Arial" ))
 	(pt 0 8)
@@ -101,7 +101,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1224 408 1400 424)
+	(rect 1224 360 1400 376)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "T4" (rect 90 0 101 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -843,7 +843,7 @@ refer to the applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 1016 288 1064 352)
+	(rect 1128 288 1176 352)
 	(text "AND3" (rect 38 1 48 25)(font "Arial" (font_size 6))(vertical))
 	(text "inst21" (rect -6 3 11 31)(font "Intel Clear" )(vertical))
 	(port
@@ -883,7 +883,7 @@ refer to the applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 1080 288 1128 352)
+	(rect 1056 288 1104 352)
 	(text "AND3" (rect 38 1 48 25)(font "Arial" (font_size 6))(vertical))
 	(text "inst22" (rect -6 3 11 31)(font "Intel Clear" )(vertical))
 	(port
@@ -1291,86 +1291,6 @@ refer to the applicable agreement for further details.
 	(pt 1200 272)
 )
 (connector
-	(pt 1096 288)
-	(pt 1096 56)
-)
-(connector
-	(pt 1104 288)
-	(pt 1104 104)
-)
-(connector
-	(pt 1112 288)
-	(pt 1112 152)
-)
-(connector
-	(pt 1032 288)
-	(pt 1032 80)
-)
-(connector
-	(pt 592 80)
-	(pt 1032 80)
-)
-(connector
-	(pt 1032 80)
-	(pt 1200 80)
-)
-(connector
-	(pt 1040 288)
-	(pt 1040 104)
-)
-(connector
-	(pt 776 104)
-	(pt 1040 104)
-)
-(connector
-	(pt 1048 288)
-	(pt 1048 152)
-)
-(connector
-	(pt 928 152)
-	(pt 1048 152)
-)
-(connector
-	(pt 1104 352)
-	(pt 1104 384)
-)
-(connector
-	(pt 1104 384)
-	(pt 1224 384)
-)
-(connector
-	(pt 1040 352)
-	(pt 1040 416)
-)
-(connector
-	(pt 1040 416)
-	(pt 1224 416)
-)
-(connector
-	(pt 1048 152)
-	(pt 1112 152)
-)
-(connector
-	(pt 1112 152)
-	(pt 1208 152)
-)
-(connector
-	(pt 1040 104)
-	(pt 1104 104)
-)
-(connector
-	(pt 1104 104)
-	(pt 1208 104)
-)
-(connector
-	(pt 832 56)
-	(pt 1096 56)
-)
-(connector
-	(pt 1096 56)
-	(pt 1208 56)
-)
-(connector
 	(pt 528 488)
 	(pt 696 488)
 )
@@ -1406,6 +1326,86 @@ refer to the applicable agreement for further details.
 	(pt 744 584)
 	(pt 768 584)
 )
+(connector
+	(pt 1144 80)
+	(pt 1144 288)
+)
+(connector
+	(pt 1152 104)
+	(pt 1152 288)
+)
+(connector
+	(pt 1160 152)
+	(pt 1160 288)
+)
+(connector
+	(pt 592 80)
+	(pt 1144 80)
+)
+(connector
+	(pt 1144 80)
+	(pt 1200 80)
+)
+(connector
+	(pt 1152 104)
+	(pt 1208 104)
+)
+(connector
+	(pt 1160 152)
+	(pt 1208 152)
+)
+(connector
+	(pt 1152 352)
+	(pt 1152 368)
+)
+(connector
+	(pt 1152 368)
+	(pt 1224 368)
+)
+(connector
+	(pt 1072 56)
+	(pt 1072 288)
+)
+(connector
+	(pt 1080 104)
+	(pt 1080 288)
+)
+(connector
+	(pt 1088 152)
+	(pt 1088 288)
+)
+(connector
+	(pt 1080 400)
+	(pt 1080 352)
+)
+(connector
+	(pt 1224 400)
+	(pt 1080 400)
+)
+(connector
+	(pt 832 56)
+	(pt 1072 56)
+)
+(connector
+	(pt 1072 56)
+	(pt 1208 56)
+)
+(connector
+	(pt 776 104)
+	(pt 1080 104)
+)
+(connector
+	(pt 1080 104)
+	(pt 1152 104)
+)
+(connector
+	(pt 928 152)
+	(pt 1088 152)
+)
+(connector
+	(pt 1088 152)
+	(pt 1160 152)
+)
 (junction (pt 480 56))
 (junction (pt 496 128))
 (junction (pt 536 56))
@@ -1430,12 +1430,12 @@ refer to the applicable agreement for further details.
 (junction (pt 632 56))
 (junction (pt 752 104))
 (junction (pt 928 152))
-(junction (pt 1096 56))
-(junction (pt 1104 104))
-(junction (pt 1112 152))
-(junction (pt 1032 80))
-(junction (pt 1040 104))
-(junction (pt 1048 152))
 (junction (pt 584 584))
 (junction (pt 744 584))
+(junction (pt 1144 80))
+(junction (pt 1152 104))
+(junction (pt 1160 152))
+(junction (pt 1072 56))
+(junction (pt 1080 104))
+(junction (pt 1088 152))
 (text "Switch Wires Around to avoid overlapping" (rect 608 624 855 643)(font "Intel Clear" (font_size 8)))
