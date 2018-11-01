@@ -3,6 +3,7 @@ seg_a <= 7seg:inst1.seg_a
 clk => T4_8:inst2.clk
 clk => TLController:inst.clk
 reset => T4_8:inst2.reset
+reset => CarCounter:inst3.reset
 reset => TLController:inst.reset
 sensorW => ee.IN0
 sensorE => ee.IN1
@@ -26,6 +27,14 @@ SYELLOWN <= TrafficDecoder:bbbbb.SYELLOW
 SYELLOWS <= TrafficDecoder:bbbbb.SYELLOW
 SGREENN <= TrafficDecoder:bbbbb.SGREEN
 SGREENS <= TrafficDecoder:bbbbb.SGREEN
+seg_a_car <= 7seg:inst7.seg_a
+seg_b_car <= 7seg:inst7.seg_b
+seg_c_car <= 7seg:inst7.seg_c
+seg_d_car <= 7seg:inst7.seg_d
+seg_e_car <= 7seg:inst7.seg_e
+seg_f_car <= 7seg:inst7.seg_f
+seg_g_car <= 7seg:inst7.seg_g
+seg_dp_car <= 7seg:inst7.seg_dp
 
 
 |TLmaster|7seg:inst1
@@ -118,6 +127,19 @@ clk => inst16.CLK
 clk => inst15.CLK
 
 
+|TLmaster|CarCounter:inst3
+waiting <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst5.ACLR
+reset => inst6.ACLR
+reset => inst4.ACLR
+sensor => inst5.CLK
+sensor => inst6.CLK
+sensor => inst4.CLK
+Z2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Z0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |TLmaster|TrafficDecoder:bbbbb
 MRED <= 1.DB_MAX_OUTPUT_PORT_TYPE
 B => 1.IN0
@@ -140,5 +162,63 @@ MGREEN <= 3.DB_MAX_OUTPUT_PORT_TYPE
 SRED <= 4.DB_MAX_OUTPUT_PORT_TYPE
 SYELLOW <= 5.DB_MAX_OUTPUT_PORT_TYPE
 SGREEN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TLmaster|7seg:inst7
+seg_a <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst15.IN0
+B => inst14.IN0
+B => inst4.IN0
+B => inst16.IN1
+B => inst32.IN1
+B => inst31.IN1
+B => inst37.IN0
+B => inst36.IN1
+B => inst42.IN0
+B => inst41.IN1
+B => inst50.IN0
+B => inst49.IN1
+B => inst38.IN1
+D => inst.IN0
+D => inst12.IN1
+D => inst13.IN2
+D => inst17.IN2
+D => inst22.IN1
+D => inst29.IN2
+D => inst37.IN1
+D => inst35.IN1
+D => inst44.IN1
+D => inst42.IN1
+D => inst48.IN1
+D => inst47.IN1
+D => inst8.IN3
+A => inst5.IN0
+A => inst7.IN0
+A => inst17.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst24.IN0
+A => inst31.IN0
+A => inst30.IN0
+A => inst47.IN0
+A => inst8.IN0
+C => inst14.IN1
+C => inst3.IN0
+C => inst7.IN1
+C => inst23.IN0
+C => inst30.IN2
+C => inst29.IN1
+C => inst35.IN0
+C => inst41.IN2
+C => inst40.IN1
+C => inst46.IN1
+C => inst38.IN2
+seg_b <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+seg_c <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+seg_d <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+seg_e <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+seg_f <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+seg_g <= inst57.DB_MAX_OUTPUT_PORT_TYPE
+seg_dp <= inst58.DB_MAX_OUTPUT_PORT_TYPE
 
 
