@@ -130,10 +130,6 @@
 				{
 					"name" : "sensorE",
 					"strict" : false
-				},
-				{
-					"name" : "sensor",
-					"strict" : false
 				}
 			]
 		}

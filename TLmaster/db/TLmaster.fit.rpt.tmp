@@ -1,5 +1,5 @@
 Fitter report for TLmaster
-Thu Nov 01 18:27:55 2018
+Fri Nov 02 15:42:43 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,36 +10,39 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Incremental Compilation Preservation Summary
-  6. Incremental Compilation Partition Settings
-  7. Incremental Compilation Placement Preservation
-  8. Pin-Out File
-  9. Fitter Resource Usage Summary
- 10. Fitter Partition Statistics
- 11. Input Pins
- 12. Output Pins
- 13. Dual Purpose and Dedicated Pins
- 14. I/O Bank Usage
- 15. All Package Pins
- 16. I/O Assignment Warnings
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Control Signals
- 21. Global & Other Fast Signals
- 22. Routing Usage Summary
- 23. LAB Logic Elements
- 24. LAB-wide Signals
- 25. LAB Signals Sourced
- 26. LAB Signals Sourced Out
- 27. LAB Distinct Inputs
- 28. I/O Rules Summary
- 29. I/O Rules Details
- 30. I/O Rules Matrix
- 31. Fitter Device Options
- 32. Operating Settings and Conditions
- 33. Fitter Messages
- 34. Fitter Suppressed Messages
+  5. Ignored Assignments
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. Dual Purpose and Dedicated Pins
+ 15. I/O Bank Usage
+ 16. All Package Pins
+ 17. I/O Assignment Warnings
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Control Signals
+ 22. Global & Other Fast Signals
+ 23. Routing Usage Summary
+ 24. LAB Logic Elements
+ 25. LAB-wide Signals
+ 26. LAB Signals Sourced
+ 27. LAB Signals Sourced Out
+ 28. LAB Distinct Inputs
+ 29. I/O Rules Summary
+ 30. I/O Rules Details
+ 31. I/O Rules Matrix
+ 32. Fitter Device Options
+ 33. Operating Settings and Conditions
+ 34. Estimated Delay Added for Hold Timing Summary
+ 35. Estimated Delay Added for Hold Timing Details
+ 36. Fitter Messages
+ 37. Fitter Suppressed Messages
 
 
 
@@ -65,18 +68,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Nov 01 18:27:55 2018       ;
+; Fitter Status                      ; Successful - Fri Nov 02 15:42:43 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; TLmaster                                    ;
 ; Top-level Entity Name              ; TLmaster                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 35 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 35 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 36 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 36 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 8 / 49,760 ( < 1 % )                        ;
 ; Total registers                    ; 8                                           ;
-; Total pins                         ; 33 / 360 ( 9 % )                            ;
+; Total pins                         ; 32 / 360 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -156,9 +159,21 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.7%      ;
-;     Processors 3-4         ;   0.7%      ;
+;     Processor 2            ;   0.6%      ;
+;     Processors 3-4         ;   0.6%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; sensor     ; PIN_A7        ; QSF Assignment ;
+; Location ;                ;              ; test       ; PIN_A8        ; QSF Assignment ;
+; Location ;                ;              ; test2      ; PIN_A9        ; QSF Assignment ;
+; Location ;                ;              ; test3      ; PIN_A10       ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -167,8 +182,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 129 ) ; 0.00 % ( 0 / 129 )         ; 0.00 % ( 0 / 129 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 129 ) ; 0.00 % ( 0 / 129 )         ; 0.00 % ( 0 / 129 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 128 ) ; 0.00 % ( 0 / 128 )         ; 0.00 % ( 0 / 128 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 128 ) ; 0.00 % ( 0 / 128 )         ; 0.00 % ( 0 / 128 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -191,7 +206,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 113 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 112 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -207,28 +222,28 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 35 / 49,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 27                    ;
+; Total logic elements                        ; 36 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 28                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 8                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 4                     ;
 ;     -- 3 input functions                    ; 27                    ;
-;     -- <=2 input functions                  ; 4                     ;
+;     -- <=2 input functions                  ; 5                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 35                    ;
+;     -- normal mode                          ; 36                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 8 / 51,509 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 8 / 49,760 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 5 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 7 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 33 / 360 ( 9 % )      ;
+; I/O pins                                    ; 32 / 360 ( 9 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
@@ -247,11 +262,11 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.2%    ;
-; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 1.0%    ;
-; Maximum fan-out                             ; 19                    ;
-; Highest non-global fan-out                  ; 19                    ;
-; Total fan-out                               ; 200                   ;
-; Average fan-out                             ; 1.55                  ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 0.6%    ;
+; Maximum fan-out                             ; 20                    ;
+; Highest non-global fan-out                  ; 20                    ;
+; Total fan-out                               ; 201                   ;
+; Average fan-out                             ; 1.57                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -264,29 +279,29 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 35 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 27                   ; 0                              ;
+; Total logic elements                        ; 36 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 28                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 8                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 4                    ; 0                              ;
 ;     -- 3 input functions                    ; 27                   ; 0                              ;
-;     -- <=2 input functions                  ; 4                    ; 0                              ;
+;     -- <=2 input functions                  ; 5                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 35                   ; 0                              ;
+;     -- normal mode                          ; 36                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 8                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 8 / 49760 ( < 1 % )  ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 5 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 7 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 33                   ; 0                              ;
+; I/O pins                                    ; 32                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )      ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -301,15 +316,15 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 206                  ; 8                              ;
-;     -- Registered Connections               ; 97                   ; 0                              ;
+;     -- Total Connections                    ; 207                  ; 8                              ;
+;     -- Registered Connections               ; 99                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 5                    ; 0                              ;
+;     -- Input Ports                          ; 4                    ; 0                              ;
 ;     -- Output Ports                         ; 28                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -335,8 +350,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; clk     ; AB9   ; 3        ; 34           ; 0            ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; reset   ; B8    ; 7        ; 46           ; 54           ; 28           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; sensor  ; A7    ; 7        ; 49           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; reset   ; B8    ; 7        ; 46           ; 54           ; 28           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; sensorE ; Y4    ; 3        ; 24           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; sensorW ; AA2   ; 3        ; 18           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
@@ -406,7 +420,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; 4        ; 4 / 48 ( 8 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
 ; 6        ; 2 / 60 ( 3 % )   ; 2.5V          ; --           ;
-; 7        ; 16 / 52 ( 31 % ) ; 2.5V          ; --           ;
+; 7        ; 15 / 52 ( 29 % ) ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )  ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -422,7 +436,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 445        ; 7        ; sensor                                         ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A9       ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A10      ; 439        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -941,7 +955,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; reset      ; Incomplete set of assignments ;
 ; sensorW    ; Incomplete set of assignments ;
 ; sensorE    ; Incomplete set of assignments ;
-; sensor     ; Incomplete set of assignments ;
 +------------+-------------------------------+
 
 
@@ -950,12 +963,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name            ; Entity Name    ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
-; |TLmaster                  ; 35 (2)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 33   ; 0            ; 27 (2)       ; 0 (0)             ; 8 (0)            ; 0          ; |TLmaster                      ; TLmaster       ; work         ;
+; |TLmaster                  ; 36 (1)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 32   ; 0            ; 28 (1)       ; 0 (0)             ; 8 (0)            ; 0          ; |TLmaster                      ; TLmaster       ; work         ;
 ;    |7seg:inst1|            ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 1 (1)            ; 0          ; |TLmaster|7seg:inst1           ; 7seg           ; work         ;
 ;    |7seg:inst7|            ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|7seg:inst7           ; 7seg           ; work         ;
-;    |CarCounter:inst3|      ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|CarCounter:inst3     ; CarCounter     ; work         ;
+;    |CarCounter:inst17|     ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|CarCounter:inst17    ; CarCounter     ; work         ;
 ;    |T4_8:inst2|            ; 3 (3)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; 0          ; |TLmaster|T4_8:inst2           ; T4_8           ; work         ;
-;    |TLController:inst|     ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|TLController:inst    ; TLController   ; work         ;
+;    |TLController:inst10|   ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|TLController:inst10  ; TLController   ; work         ;
 ;    |TrafficDecoder:bbbbb|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|TrafficDecoder:bbbbb ; TrafficDecoder ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -994,93 +1007,89 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_f_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_g_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_dp_car ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; clk        ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; reset      ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; sensorW    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; sensorE    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; sensor     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; clk        ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; reset      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; sensorW    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; sensorE    ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+--------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                               ;
-+--------------------------------+-------------------+---------+
-; Source Pin / Fanout            ; Pad To Core Index ; Setting ;
-+--------------------------------+-------------------+---------+
-; clk                            ;                   ;         ;
-;      - TLController:inst|inst8 ; 0                 ; 0       ;
-;      - TLController:inst|inst6 ; 0                 ; 0       ;
-;      - TLController:inst|inst7 ; 0                 ; 0       ;
-;      - T4_8:inst2|inst16       ; 0                 ; 0       ;
-;      - T4_8:inst2|inst15       ; 0                 ; 0       ;
-; reset                          ;                   ;         ;
-;      - TLController:inst|inst8 ; 1                 ; 6       ;
-;      - T4_8:inst2|inst16       ; 1                 ; 6       ;
-;      - T4_8:inst2|inst15       ; 1                 ; 6       ;
-;      - CarCounter:inst3|inst5  ; 1                 ; 6       ;
-;      - CarCounter:inst3|inst6  ; 1                 ; 6       ;
-;      - CarCounter:inst3|inst4  ; 1                 ; 6       ;
-;      - TLController:inst|inst6 ; 1                 ; 6       ;
-;      - TLController:inst|inst7 ; 1                 ; 6       ;
-; sensorW                        ;                   ;         ;
-;      - ee                      ; 1                 ; 6       ;
-; sensorE                        ;                   ;         ;
-;      - ee                      ; 0                 ; 6       ;
-; sensor                         ;                   ;         ;
-;      - ee                      ; 0                 ; 0       ;
-+--------------------------------+-------------------+---------+
++----------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                 ;
++----------------------------------+-------------------+---------+
+; Source Pin / Fanout              ; Pad To Core Index ; Setting ;
++----------------------------------+-------------------+---------+
+; clk                              ;                   ;         ;
+;      - TLController:inst10|inst8 ; 1                 ; 0       ;
+;      - TLController:inst10|inst6 ; 1                 ; 0       ;
+;      - TLController:inst10|inst7 ; 1                 ; 0       ;
+;      - T4_8:inst2|inst16         ; 1                 ; 0       ;
+;      - T4_8:inst2|inst15         ; 1                 ; 0       ;
+; reset                            ;                   ;         ;
+;      - TLController:inst10|inst8 ; 0                 ; 6       ;
+;      - T4_8:inst2|inst16         ; 0                 ; 6       ;
+;      - T4_8:inst2|inst15         ; 0                 ; 6       ;
+;      - TLController:inst10|inst6 ; 0                 ; 6       ;
+;      - TLController:inst10|inst7 ; 0                 ; 6       ;
+;      - CarCounter:inst17|inst18  ; 0                 ; 6       ;
+; sensorW                          ;                   ;         ;
+;      - CarCounter:inst17|inst21  ; 0                 ; 6       ;
+; sensorE                          ;                   ;         ;
+;      - CarCounter:inst17|inst21  ; 1                 ; 0       ;
++----------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                   ;
-+-------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name  ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk   ; PIN_AB9           ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; ee    ; LCCOMB_X45_Y50_N2 ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; reset ; PIN_B8            ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+-------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                      ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CarCounter:inst17|inst18 ; LCCOMB_X35_Y4_N8  ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; CarCounter:inst17|inst21 ; LCCOMB_X25_Y1_N20 ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; clk                      ; PIN_AB9           ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; reset                    ; PIN_B8            ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                     ;
-+------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; ee   ; LCCOMB_X45_Y50_N2 ; 3       ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
-+------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                         ;
++--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                     ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CarCounter:inst17|inst21 ; LCCOMB_X25_Y1_N20 ; 3       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
++--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------+
-; Routing Usage Summary                           ;
-+-----------------------+-------------------------+
-; Routing Resource Type ; Usage                   ;
-+-----------------------+-------------------------+
-; Block interconnects   ; 50 / 148,641 ( < 1 % )  ;
-; C16 interconnects     ; 32 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 129 / 106,704 ( < 1 % ) ;
-; Direct links          ; 9 / 148,641 ( < 1 % )   ;
-; Global clocks         ; 1 / 20 ( 5 % )          ;
-; Local interconnects   ; 10 / 49,760 ( < 1 % )   ;
-; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 22 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 69 / 147,764 ( < 1 % )  ;
-+-----------------------+-------------------------+
++------------------------------------------------+
+; Routing Usage Summary                          ;
++-----------------------+------------------------+
+; Routing Resource Type ; Usage                  ;
++-----------------------+------------------------+
+; Block interconnects   ; 54 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 33 / 5,382 ( < 1 % )   ;
+; C4 interconnects      ; 76 / 106,704 ( < 1 % ) ;
+; Direct links          ; 3 / 148,641 ( < 1 % )  ;
+; Global clocks         ; 1 / 20 ( 5 % )         ;
+; Local interconnects   ; 11 / 49,760 ( < 1 % )  ;
+; NSLEEPs               ; 0 / 500 ( 0 % )        ;
+; R24 interconnects     ; 19 / 5,406 ( < 1 % )   ;
+; R4 interconnects      ; 81 / 147,764 ( < 1 % ) ;
++-----------------------+------------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 7.00) ; Number of LABs  (Total = 5) ;
+; Number of Logic Elements  (Average = 5.14) ; Number of LABs  (Total = 7) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 2                           ;
-; 2                                          ; 0                           ;
+; 1                                          ; 3                           ;
+; 2                                          ; 1                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
 ; 5                                          ; 0                           ;
-; 6                                          ; 0                           ;
+; 6                                          ; 1                           ;
 ; 7                                          ; 0                           ;
-; 8                                          ; 1                           ;
+; 8                                          ; 0                           ;
 ; 9                                          ; 1                           ;
 ; 10                                         ; 0                           ;
 ; 11                                         ; 0                           ;
@@ -1095,7 +1104,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.40) ; Number of LABs  (Total = 5) ;
+; LAB-wide Signals  (Average = 0.29) ; Number of LABs  (Total = 7) ;
 +------------------------------------+-----------------------------+
 ; 1 Async. clear                     ; 1                           ;
 ; 2 Clocks                           ; 1                           ;
@@ -1105,17 +1114,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 8.60) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced  (Average = 6.29) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 2                           ;
-; 2                                           ; 0                           ;
+; 1                                           ; 3                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 0                           ;
 ; 9                                           ; 1                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
@@ -1138,31 +1147,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 6.00) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 4.29) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 2                           ;
-; 2                                               ; 0                           ;
+; 1                                               ; 3                           ;
+; 2                                               ; 1                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
+; 6                                               ; 1                           ;
 ; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
+; 8                                               ; 0                           ;
 ; 9                                               ; 1                           ;
-; 10                                              ; 0                           ;
-; 11                                              ; 1                           ;
+; 10                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 2.40) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 2.29) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
+; 2                                           ; 2                           ;
 ; 3                                           ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
@@ -1224,9 +1232,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 33        ; 0            ; 33        ; 0            ; 0            ; 33        ; 33        ; 0            ; 33        ; 33        ; 0            ; 28           ; 0            ; 0            ; 5            ; 0            ; 28           ; 5            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 33        ; 0            ; 0            ;
+; Total Pass         ; 32        ; 0            ; 32        ; 0            ; 0            ; 32        ; 32        ; 0            ; 32        ; 32        ; 0            ; 28           ; 0            ; 0            ; 4            ; 0            ; 28           ; 4            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 32        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 33           ; 0         ; 33           ; 33           ; 0         ; 0         ; 33           ; 0         ; 0         ; 33           ; 5            ; 33           ; 33           ; 28           ; 33           ; 5            ; 28           ; 33           ; 33           ; 33           ; 5            ; 33           ; 33           ; 33           ; 33           ; 33           ; 0         ; 33           ; 33           ;
+; Total Inapplicable ; 0         ; 32           ; 0         ; 32           ; 32           ; 0         ; 0         ; 32           ; 0         ; 0         ; 32           ; 4            ; 32           ; 32           ; 28           ; 32           ; 4            ; 28           ; 32           ; 32           ; 32           ; 4            ; 32           ; 32           ; 32           ; 32           ; 32           ; 0         ; 32           ; 32           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; seg_a              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_b              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1260,7 +1268,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; reset              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sensorW            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sensorE            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sensor             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1299,6 +1306,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Low Junction Temperature  ; 0 °C   ;
 ; High Junction Temperature ; 85 °C  ;
 +---------------------------+--------+
+
+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clk             ; sensorE              ; 3.3               ;
+; clk,I/O         ; sensorE              ; 1.8               ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                           ;
++---------------------------+-------------------------+-------------------+
+; Source Register           ; Destination Register    ; Delay Added in ns ;
++---------------------------+-------------------------+-------------------+
+; TLController:inst10|inst7 ; CarCounter:inst17|inst4 ; 3.679             ;
+; TLController:inst10|inst6 ; CarCounter:inst17|inst4 ; 3.296             ;
+; reset                     ; CarCounter:inst17|inst4 ; 1.837             ;
++---------------------------+-------------------------+-------------------+
+Note: This table only shows the top 3 path(s) that have the largest delay added for hold.
 
 
 +-----------------+

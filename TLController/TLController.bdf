@@ -21,22 +21,6 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 216 240 384 256)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "sensor" (rect 5 0 35 17)(font "Intel Clear" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 216 192 384 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "done" (rect 5 0 28 12)(font "Arial" ))
@@ -66,12 +50,30 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 160 592 216 616))
 )
 (pin
 	(input)
 	(rect 216 480 384 496)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 152 496 216 520))
+)
+(pin
+	(input)
+	(rect 216 240 384 256)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "waiting" (rect 5 0 39 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -152,6 +154,22 @@ refer to the applicable agreement for further details.
 	(rect 1208 144 1384 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Z0" (rect 90 0 101 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1224 424 1400 440)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "carreset" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -922,6 +940,39 @@ refer to the applicable agreement for further details.
 	)
 	(rotate270)
 )
+(symbol
+	(rect 984 288 1032 352)
+	(text "AND2" (rect 38 1 48 25)(font "Arial" (font_size 6))(vertical))
+	(text "inst1" (rect -6 3 11 25)(font "Intel Clear" )(vertical))
+	(port
+		(pt 32 0)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 29 2 41 19)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 32 0)(pt 32 14))
+	)
+	(port
+		(pt 16 0)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 13 2 25 19)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 0)(pt 16 14))
+	)
+	(port
+		(pt 24 64)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 21 48 33 65)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 24 42)(pt 24 64))
+	)
+	(drawing
+		(line (pt 36 14)(pt 36 30))
+		(line (pt 11 14)(pt 11 31))
+		(line (pt 36 14)(pt 11 14))
+		(arc (pt 11 31)(pt 36 30)(rect 11 18 36 43))
+	)
+	(rotate270)
+)
 (connector
 	(pt 384 56)
 	(pt 384 80)
@@ -1267,10 +1318,6 @@ refer to the applicable agreement for further details.
 	(pt 832 56)
 )
 (connector
-	(pt 656 128)
-	(pt 1200 128)
-)
-(connector
 	(pt 888 176)
 	(pt 1200 176)
 )
@@ -1383,10 +1430,6 @@ refer to the applicable agreement for further details.
 	(pt 1080 400)
 )
 (connector
-	(pt 832 56)
-	(pt 1072 56)
-)
-(connector
 	(pt 1072 56)
 	(pt 1208 56)
 )
@@ -1405,6 +1448,38 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1088 152)
 	(pt 1160 152)
+)
+(connector
+	(pt 1000 288)
+	(pt 1000 56)
+)
+(connector
+	(pt 832 56)
+	(pt 1000 56)
+)
+(connector
+	(pt 1000 56)
+	(pt 1072 56)
+)
+(connector
+	(pt 1016 288)
+	(pt 1016 128)
+)
+(connector
+	(pt 656 128)
+	(pt 1016 128)
+)
+(connector
+	(pt 1016 128)
+	(pt 1200 128)
+)
+(connector
+	(pt 1008 352)
+	(pt 1008 432)
+)
+(connector
+	(pt 1008 432)
+	(pt 1224 432)
 )
 (junction (pt 480 56))
 (junction (pt 496 128))
@@ -1438,4 +1513,6 @@ refer to the applicable agreement for further details.
 (junction (pt 1072 56))
 (junction (pt 1080 104))
 (junction (pt 1088 152))
+(junction (pt 1000 56))
+(junction (pt 1016 128))
 (text "Switch Wires Around to avoid overlapping" (rect 608 624 855 643)(font "Intel Clear" (font_size 8)))

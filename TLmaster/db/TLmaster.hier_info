@@ -1,13 +1,12 @@
 |TLmaster
 seg_a <= 7seg:inst1.seg_a
 clk => T4_8:inst2.clk
-clk => TLController:inst.clk
+clk => TLController:inst10.clk
 reset => T4_8:inst2.reset
-reset => CarCounter:inst3.reset
-reset => TLController:inst.reset
-sensorW => ee.IN0
-sensorE => ee.IN1
-sensor => ee.IN2
+reset => CarCounter:inst17.reset
+reset => TLController:inst10.reset
+sensorW => inst.IN0
+sensorE => inst15.IN0
 seg_b <= 7seg:inst1.seg_b
 seg_c <= 7seg:inst1.seg_c
 seg_d <= 7seg:inst1.seg_d
@@ -95,7 +94,7 @@ seg_g <= inst57.DB_MAX_OUTPUT_PORT_TYPE
 seg_dp <= inst58.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TLmaster|TLController:inst
+|TLmaster|TLController:inst10
 T8 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
 reset => inst8.ACLR
 reset => inst7.PRESET
@@ -105,11 +104,12 @@ clk => inst6.CLK
 clk => inst7.CLK
 done => inst18.IN0
 done => inst19.IN1
-sensor => inst19.IN0
+waiting => inst19.IN0
 T4 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
 Z2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 Z1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 Z0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+carreset <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TLmaster|T4_8:inst2
@@ -127,14 +127,12 @@ clk => inst16.CLK
 clk => inst15.CLK
 
 
-|TLmaster|CarCounter:inst3
+|TLmaster|CarCounter:inst17
 waiting <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-reset => inst5.ACLR
-reset => inst6.ACLR
-reset => inst4.ACLR
-sensor => inst5.CLK
-sensor => inst6.CLK
-sensor => inst4.CLK
+carreset => inst18.IN0
+reset => inst19.IN0
+sensor2 => inst21.IN0
+sensor1 => inst21.IN1
 Z2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 Z1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 Z0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
