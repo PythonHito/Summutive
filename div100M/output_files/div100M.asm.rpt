@@ -1,0 +1,76 @@
+Assembler report for div100M
+Fri Oct 19 16:39:24 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/temp/div100M/output_files/div100M.pof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Fri Oct 19 16:39:24 2018 ;
+; Revision Name         ; div100M                               ;
+; Top-level Entity Name ; div100M                               ;
+; Family                ; MAX V                                 ;
+; Device                ; 5M80ZM68C4                            ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++------------------------------------------+
+; Assembler Generated Files                ;
++------------------------------------------+
+; File Name                                ;
++------------------------------------------+
+; C:/temp/div100M/output_files/div100M.pof ;
++------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Assembler Device Options: C:/temp/div100M/output_files/div100M.pof ;
++----------------+---------------------------------------------------+
+; Option         ; Setting                                           ;
++----------------+---------------------------------------------------+
+; JTAG usercode  ; 0x0018C9BF                                        ;
+; Checksum       ; 0x0018CBBF                                        ;
++----------------+---------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+

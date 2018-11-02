@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : -2.576
+TNS   : -8.313
+
+Type  : Setup 'div10:inst10|inst'
+Slack : -2.391
+TNS   : -8.034
+
+Type  : Setup 'div10:inst9|inst'
+Slack : -2.381
+TNS   : -8.269
+
+Type  : Setup 'div10:inst15|inst'
+Slack : -2.375
+TNS   : -7.796
+
+Type  : Setup 'div10:inst13|inst'
+Slack : -2.369
+TNS   : -7.976
+
+Type  : Setup 'div10:inst14|inst'
+Slack : -2.259
+TNS   : -7.503
+
+Type  : Setup 'div10:inst12|inst'
+Slack : -2.237
+TNS   : -7.917
+
+Type  : Setup 'div10:inst11|inst'
+Slack : -2.233
+TNS   : -7.925
+
+Type  : Hold 'div10:inst10|inst'
+Slack : -3.472
+TNS   : -5.580
+
+Type  : Hold 'div10:inst12|inst'
+Slack : -2.803
+TNS   : -5.098
+
+Type  : Hold 'div10:inst11|inst'
+Slack : -2.787
+TNS   : -5.066
+
+Type  : Hold 'div10:inst14|inst'
+Slack : -1.959
+TNS   : -3.917
+
+Type  : Hold 'clk'
+Slack : -1.103
+TNS   : -2.199
+
+Type  : Hold 'div10:inst15|inst'
+Slack : -0.821
+TNS   : -1.639
+
+Type  : Hold 'div10:inst13|inst'
+Slack : -0.760
+TNS   : -1.512
+
+Type  : Hold 'div10:inst9|inst'
+Slack : 2.051
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'div10:inst10|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst11|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst12|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst13|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst14|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst15|inst'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div10:inst9|inst'
+Slack : 0.247
+TNS   : 0.000
+
+------------------------------------------------------------

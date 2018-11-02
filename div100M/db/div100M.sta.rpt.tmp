@@ -1,0 +1,675 @@
+Timing Analyzer report for div100M
+Fri Oct 19 16:39:28 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk'
+ 12. Setup: 'div10:inst10|inst'
+ 13. Setup: 'div10:inst9|inst'
+ 14. Setup: 'div10:inst15|inst'
+ 15. Setup: 'div10:inst13|inst'
+ 16. Setup: 'div10:inst14|inst'
+ 17. Setup: 'div10:inst12|inst'
+ 18. Setup: 'div10:inst11|inst'
+ 19. Hold: 'div10:inst10|inst'
+ 20. Hold: 'div10:inst12|inst'
+ 21. Hold: 'div10:inst11|inst'
+ 22. Hold: 'div10:inst14|inst'
+ 23. Hold: 'clk'
+ 24. Hold: 'div10:inst15|inst'
+ 25. Hold: 'div10:inst13|inst'
+ 26. Hold: 'div10:inst9|inst'
+ 27. Setup Transfers
+ 28. Hold Transfers
+ 29. Report TCCS
+ 30. Report RSKM
+ 31. Unconstrained Paths Summary
+ 32. Clock Status Summary
+ 33. Unconstrained Input Ports
+ 34. Unconstrained Output Ports
+ 35. Unconstrained Input Ports
+ 36. Unconstrained Output Ports
+ 37. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; div100M                                             ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M80ZM68C4                                          ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; Clock Name        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets               ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+; clk               ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }               ;
+; div10:inst9|inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst9|inst }  ;
+; div10:inst10|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst10|inst } ;
+; div10:inst11|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst11|inst } ;
+; div10:inst12|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst12|inst } ;
+; div10:inst13|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst13|inst } ;
+; div10:inst14|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst14|inst } ;
+; div10:inst15|inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div10:inst15|inst } ;
++-------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------+
+
+
++---------------------------------------------------------+
+; Fmax Summary                                            ;
++------------+-----------------+-------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name        ; Note ;
++------------+-----------------+-------------------+------+
+; 279.64 MHz ; 279.64 MHz      ; clk               ;      ;
+; 294.9 MHz  ; 294.9 MHz       ; div10:inst10|inst ;      ;
+; 295.77 MHz ; 295.77 MHz      ; div10:inst9|inst  ;      ;
+; 296.3 MHz  ; 296.3 MHz       ; div10:inst15|inst ;      ;
+; 296.82 MHz ; 296.82 MHz      ; div10:inst13|inst ;      ;
+; 306.84 MHz ; 306.84 MHz      ; div10:inst14|inst ;      ;
+; 308.93 MHz ; 308.93 MHz      ; div10:inst12|inst ;      ;
+; 309.31 MHz ; 309.31 MHz      ; div10:inst11|inst ;      ;
++------------+-----------------+-------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------+
+; Setup Summary                              ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -2.576 ; -8.313        ;
+; div10:inst10|inst ; -2.391 ; -8.034        ;
+; div10:inst9|inst  ; -2.381 ; -8.269        ;
+; div10:inst15|inst ; -2.375 ; -7.796        ;
+; div10:inst13|inst ; -2.369 ; -7.976        ;
+; div10:inst14|inst ; -2.259 ; -7.503        ;
+; div10:inst12|inst ; -2.237 ; -7.917        ;
+; div10:inst11|inst ; -2.233 ; -7.925        ;
++-------------------+--------+---------------+
+
+
++--------------------------------------------+
+; Hold Summary                               ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; div10:inst10|inst ; -3.472 ; -5.580        ;
+; div10:inst12|inst ; -2.803 ; -5.098        ;
+; div10:inst11|inst ; -2.787 ; -5.066        ;
+; div10:inst14|inst ; -1.959 ; -3.917        ;
+; clk               ; -1.103 ; -2.199        ;
+; div10:inst15|inst ; -0.821 ; -1.639        ;
+; div10:inst13|inst ; -0.760 ; -1.512        ;
+; div10:inst9|inst  ; 2.051  ; 0.000         ;
++-------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------------------+
+; Minimum Pulse Width Summary                ;
++-------------------+--------+---------------+
+; Clock             ; Slack  ; End Point TNS ;
++-------------------+--------+---------------+
+; clk               ; -2.289 ; -2.289        ;
+; div10:inst10|inst ; 0.247  ; 0.000         ;
+; div10:inst11|inst ; 0.247  ; 0.000         ;
+; div10:inst12|inst ; 0.247  ; 0.000         ;
+; div10:inst13|inst ; 0.247  ; 0.000         ;
+; div10:inst14|inst ; 0.247  ; 0.000         ;
+; div10:inst15|inst ; 0.247  ; 0.000         ;
+; div10:inst9|inst  ; 0.247  ; 0.000         ;
++-------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                                ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+; -2.576 ; div10:inst15|inst2 ; div10:inst15|inst  ; clk               ; clk         ; 1.000        ; 0.000      ; 3.316      ;
+; -2.336 ; div10:inst15|inst2 ; div10:inst15|inst1 ; clk               ; clk         ; 1.000        ; 0.000      ; 3.076      ;
+; -1.713 ; div10:inst15|inst3 ; div10:inst15|inst1 ; clk               ; clk         ; 1.000        ; 0.000      ; 2.453      ;
+; -1.711 ; div10:inst15|inst3 ; div10:inst15|inst  ; clk               ; clk         ; 1.000        ; 0.000      ; 2.451      ;
+; -1.704 ; div10:inst15|inst3 ; div10:inst15|inst2 ; clk               ; clk         ; 1.000        ; 0.000      ; 2.444      ;
+; -1.697 ; div10:inst15|inst3 ; div10:inst15|inst3 ; clk               ; clk         ; 1.000        ; 0.000      ; 2.437      ;
+; -1.430 ; div10:inst15|inst1 ; div10:inst15|inst  ; clk               ; clk         ; 1.000        ; 0.000      ; 2.170      ;
+; -1.426 ; div10:inst15|inst1 ; div10:inst15|inst1 ; clk               ; clk         ; 1.000        ; 0.000      ; 2.166      ;
+; -1.384 ; div10:inst15|inst2 ; div10:inst15|inst2 ; clk               ; clk         ; 1.000        ; 0.000      ; 2.124      ;
+; 1.262  ; div10:inst15|inst  ; div10:inst15|inst2 ; div10:inst15|inst ; clk         ; 0.500        ; 3.716      ; 3.074      ;
+; 1.269  ; div10:inst15|inst  ; div10:inst15|inst  ; div10:inst15|inst ; clk         ; 0.500        ; 3.716      ; 3.067      ;
+; 1.762  ; div10:inst15|inst  ; div10:inst15|inst2 ; div10:inst15|inst ; clk         ; 1.000        ; 3.716      ; 3.074      ;
+; 1.769  ; div10:inst15|inst  ; div10:inst15|inst  ; div10:inst15|inst ; clk         ; 1.000        ; 3.716      ; 3.067      ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst10|inst'                                                                                                      ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.391 ; div10:inst9|inst3 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 3.131      ;
+; -2.236 ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.976      ;
+; -1.738 ; div10:inst9|inst1 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.478      ;
+; -1.711 ; div10:inst9|inst3 ; div10:inst9|inst2 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.451      ;
+; -1.705 ; div10:inst9|inst3 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.445      ;
+; -1.696 ; div10:inst9|inst3 ; div10:inst9|inst3 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.436      ;
+; -1.674 ; div10:inst9|inst1 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.414      ;
+; -1.416 ; div10:inst9|inst2 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.156      ;
+; -1.413 ; div10:inst9|inst2 ; div10:inst9|inst2 ; div10:inst10|inst ; div10:inst10|inst ; 1.000        ; 0.000      ; 2.153      ;
+; 2.274  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst10|inst ; 0.500        ; 5.978      ; 4.324      ;
+; 2.774  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst10|inst ; 1.000        ; 5.978      ; 4.324      ;
+; 3.638  ; div10:inst9|inst  ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; 0.500        ; 5.978      ; 2.960      ;
+; 4.138  ; div10:inst9|inst  ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; 1.000        ; 5.978      ; 2.960      ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst9|inst'                                                                                                     ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; -2.381 ; div10:inst8|inst2 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 3.121      ;
+; -2.327 ; div10:inst8|inst3 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 3.067      ;
+; -2.216 ; div10:inst8|inst1 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.956      ;
+; -2.176 ; div10:inst8|inst  ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.916      ;
+; -1.699 ; div10:inst8|inst2 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.439      ;
+; -1.687 ; div10:inst8|inst2 ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.427      ;
+; -1.610 ; div10:inst8|inst  ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.350      ;
+; -1.397 ; div10:inst8|inst1 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.137      ;
+; -1.393 ; div10:inst8|inst3 ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.133      ;
+; -1.387 ; div10:inst8|inst3 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.127      ;
+; -1.385 ; div10:inst8|inst3 ; div10:inst8|inst3 ; div10:inst9|inst ; div10:inst9|inst ; 1.000        ; 0.000      ; 2.125      ;
++--------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst15|inst'                                                                                                        ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.375 ; div10:inst14|inst2 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 3.115      ;
+; -2.281 ; div10:inst14|inst3 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 3.021      ;
+; -1.759 ; div10:inst14|inst1 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.499      ;
+; -1.696 ; div10:inst14|inst2 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.436      ;
+; -1.689 ; div10:inst14|inst2 ; div10:inst14|inst2 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.429      ;
+; -1.677 ; div10:inst14|inst1 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.417      ;
+; -1.461 ; div10:inst14|inst3 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.201      ;
+; -1.456 ; div10:inst14|inst3 ; div10:inst14|inst2 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.196      ;
+; -1.451 ; div10:inst14|inst3 ; div10:inst14|inst3 ; div10:inst15|inst ; div10:inst15|inst ; 1.000        ; 0.000      ; 2.191      ;
+; 0.984  ; div10:inst14|inst  ; div10:inst14|inst2 ; div10:inst14|inst ; div10:inst15|inst ; 0.500        ; 3.347      ; 2.983      ;
+; 0.987  ; div10:inst14|inst  ; div10:inst14|inst  ; div10:inst14|inst ; div10:inst15|inst ; 0.500        ; 3.347      ; 2.980      ;
+; 1.484  ; div10:inst14|inst  ; div10:inst14|inst2 ; div10:inst14|inst ; div10:inst15|inst ; 1.000        ; 3.347      ; 2.983      ;
+; 1.487  ; div10:inst14|inst  ; div10:inst14|inst  ; div10:inst14|inst ; div10:inst15|inst ; 1.000        ; 3.347      ; 2.980      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst13|inst'                                                                                                        ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.369 ; div10:inst12|inst3 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 3.109      ;
+; -2.244 ; div10:inst12|inst2 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.984      ;
+; -1.762 ; div10:inst12|inst3 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.502      ;
+; -1.682 ; div10:inst12|inst3 ; div10:inst12|inst2 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.422      ;
+; -1.681 ; div10:inst12|inst3 ; div10:inst12|inst3 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.421      ;
+; -1.678 ; div10:inst12|inst1 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.418      ;
+; -1.674 ; div10:inst12|inst1 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.414      ;
+; -1.427 ; div10:inst12|inst2 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.167      ;
+; -1.419 ; div10:inst12|inst2 ; div10:inst12|inst2 ; div10:inst13|inst ; div10:inst13|inst ; 1.000        ; 0.000      ; 2.159      ;
+; 0.918  ; div10:inst12|inst  ; div10:inst12|inst2 ; div10:inst12|inst ; div10:inst13|inst ; 0.500        ; 3.373      ; 3.075      ;
+; 0.926  ; div10:inst12|inst  ; div10:inst12|inst  ; div10:inst12|inst ; div10:inst13|inst ; 0.500        ; 3.373      ; 3.067      ;
+; 1.418  ; div10:inst12|inst  ; div10:inst12|inst2 ; div10:inst12|inst ; div10:inst13|inst ; 1.000        ; 3.373      ; 3.075      ;
+; 1.426  ; div10:inst12|inst  ; div10:inst12|inst  ; div10:inst12|inst ; div10:inst13|inst ; 1.000        ; 3.373      ; 3.067      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst14|inst'                                                                                                        ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.259 ; div10:inst13|inst3 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.999      ;
+; -2.189 ; div10:inst13|inst2 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.929      ;
+; -1.777 ; div10:inst13|inst2 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.517      ;
+; -1.681 ; div10:inst13|inst1 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.421      ;
+; -1.674 ; div10:inst13|inst1 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.414      ;
+; -1.626 ; div10:inst13|inst2 ; div10:inst13|inst2 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.366      ;
+; -1.433 ; div10:inst13|inst3 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.173      ;
+; -1.430 ; div10:inst13|inst3 ; div10:inst13|inst2 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.170      ;
+; -1.429 ; div10:inst13|inst3 ; div10:inst13|inst3 ; div10:inst14|inst ; div10:inst14|inst ; 1.000        ; 0.000      ; 2.169      ;
+; 2.124  ; div10:inst13|inst  ; div10:inst13|inst2 ; div10:inst13|inst ; div10:inst14|inst ; 0.500        ; 4.572      ; 3.068      ;
+; 2.125  ; div10:inst13|inst  ; div10:inst13|inst  ; div10:inst13|inst ; div10:inst14|inst ; 0.500        ; 4.572      ; 3.067      ;
+; 2.624  ; div10:inst13|inst  ; div10:inst13|inst2 ; div10:inst13|inst ; div10:inst14|inst ; 1.000        ; 4.572      ; 3.068      ;
+; 2.625  ; div10:inst13|inst  ; div10:inst13|inst  ; div10:inst13|inst ; div10:inst14|inst ; 1.000        ; 4.572      ; 3.067      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst12|inst'                                                                                                        ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.237 ; div10:inst11|inst2 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.977      ;
+; -2.236 ; div10:inst11|inst2 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.976      ;
+; -2.050 ; div10:inst11|inst1 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.790      ;
+; -1.815 ; div10:inst11|inst3 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.555      ;
+; -1.814 ; div10:inst11|inst3 ; div10:inst11|inst3 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.554      ;
+; -1.630 ; div10:inst11|inst3 ; div10:inst11|inst2 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.370      ;
+; -1.629 ; div10:inst11|inst3 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.369      ;
+; -1.416 ; div10:inst11|inst2 ; div10:inst11|inst2 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.156      ;
+; -1.345 ; div10:inst11|inst1 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 1.000        ; 0.000      ; 2.085      ;
+; 2.461  ; div10:inst11|inst  ; div10:inst11|inst  ; div10:inst11|inst ; div10:inst12|inst ; 0.500        ; 5.311      ; 3.470      ;
+; 2.961  ; div10:inst11|inst  ; div10:inst11|inst  ; div10:inst11|inst ; div10:inst12|inst ; 1.000        ; 5.311      ; 3.470      ;
+; 2.969  ; div10:inst11|inst  ; div10:inst11|inst2 ; div10:inst11|inst ; div10:inst12|inst ; 0.500        ; 5.311      ; 2.962      ;
+; 3.469  ; div10:inst11|inst  ; div10:inst11|inst2 ; div10:inst11|inst ; div10:inst12|inst ; 1.000        ; 5.311      ; 2.962      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'div10:inst11|inst'                                                                                                        ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.233 ; div10:inst10|inst2 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.973      ;
+; -2.222 ; div10:inst10|inst3 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.962      ;
+; -2.004 ; div10:inst10|inst2 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.744      ;
+; -1.810 ; div10:inst10|inst3 ; div10:inst10|inst3 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.550      ;
+; -1.800 ; div10:inst10|inst1 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.540      ;
+; -1.800 ; div10:inst10|inst1 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.540      ;
+; -1.662 ; div10:inst10|inst3 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.402      ;
+; -1.660 ; div10:inst10|inst3 ; div10:inst10|inst2 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.400      ;
+; -1.413 ; div10:inst10|inst2 ; div10:inst10|inst2 ; div10:inst11|inst ; div10:inst11|inst ; 1.000        ; 0.000      ; 2.153      ;
+; 2.445  ; div10:inst10|inst  ; div10:inst10|inst  ; div10:inst10|inst ; div10:inst11|inst ; 0.500        ; 5.267      ; 3.442      ;
+; 2.945  ; div10:inst10|inst  ; div10:inst10|inst  ; div10:inst10|inst ; div10:inst11|inst ; 1.000        ; 5.267      ; 3.442      ;
+; 2.953  ; div10:inst10|inst  ; div10:inst10|inst2 ; div10:inst10|inst ; div10:inst11|inst ; 0.500        ; 5.267      ; 2.934      ;
+; 3.453  ; div10:inst10|inst  ; div10:inst10|inst2 ; div10:inst10|inst ; div10:inst11|inst ; 1.000        ; 5.267      ; 2.934      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst10|inst'                                                                                                       ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node         ; To Node           ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+; -3.472 ; div10:inst9|inst  ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; 0.000        ; 5.978      ; 2.960      ;
+; -2.972 ; div10:inst9|inst  ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; -0.500       ; 5.978      ; 2.960      ;
+; -2.108 ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst10|inst ; 0.000        ; 5.978      ; 4.324      ;
+; -1.608 ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst9|inst  ; div10:inst10|inst ; -0.500       ; 5.978      ; 4.324      ;
+; 2.079  ; div10:inst9|inst2 ; div10:inst9|inst2 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.153      ;
+; 2.082  ; div10:inst9|inst2 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.156      ;
+; 2.340  ; div10:inst9|inst1 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.414      ;
+; 2.362  ; div10:inst9|inst3 ; div10:inst9|inst3 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.436      ;
+; 2.371  ; div10:inst9|inst3 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.445      ;
+; 2.377  ; div10:inst9|inst3 ; div10:inst9|inst2 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.451      ;
+; 2.404  ; div10:inst9|inst1 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.478      ;
+; 2.902  ; div10:inst9|inst2 ; div10:inst9|inst  ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 2.976      ;
+; 3.057  ; div10:inst9|inst3 ; div10:inst9|inst1 ; div10:inst10|inst ; div10:inst10|inst ; 0.000        ; 0.000      ; 3.131      ;
++--------+-------------------+-------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst12|inst'                                                                                                         ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.803 ; div10:inst11|inst  ; div10:inst11|inst2 ; div10:inst11|inst ; div10:inst12|inst ; 0.000        ; 5.311      ; 2.962      ;
+; -2.303 ; div10:inst11|inst  ; div10:inst11|inst2 ; div10:inst11|inst ; div10:inst12|inst ; -0.500       ; 5.311      ; 2.962      ;
+; -2.295 ; div10:inst11|inst  ; div10:inst11|inst  ; div10:inst11|inst ; div10:inst12|inst ; 0.000        ; 5.311      ; 3.470      ;
+; -1.795 ; div10:inst11|inst  ; div10:inst11|inst  ; div10:inst11|inst ; div10:inst12|inst ; -0.500       ; 5.311      ; 3.470      ;
+; 2.011  ; div10:inst11|inst1 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.085      ;
+; 2.082  ; div10:inst11|inst2 ; div10:inst11|inst2 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.156      ;
+; 2.295  ; div10:inst11|inst3 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.369      ;
+; 2.296  ; div10:inst11|inst3 ; div10:inst11|inst2 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.370      ;
+; 2.480  ; div10:inst11|inst3 ; div10:inst11|inst3 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.554      ;
+; 2.481  ; div10:inst11|inst3 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.555      ;
+; 2.716  ; div10:inst11|inst1 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.790      ;
+; 2.902  ; div10:inst11|inst2 ; div10:inst11|inst  ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.976      ;
+; 2.903  ; div10:inst11|inst2 ; div10:inst11|inst1 ; div10:inst12|inst ; div10:inst12|inst ; 0.000        ; 0.000      ; 2.977      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst11|inst'                                                                                                         ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -2.787 ; div10:inst10|inst  ; div10:inst10|inst2 ; div10:inst10|inst ; div10:inst11|inst ; 0.000        ; 5.267      ; 2.934      ;
+; -2.287 ; div10:inst10|inst  ; div10:inst10|inst2 ; div10:inst10|inst ; div10:inst11|inst ; -0.500       ; 5.267      ; 2.934      ;
+; -2.279 ; div10:inst10|inst  ; div10:inst10|inst  ; div10:inst10|inst ; div10:inst11|inst ; 0.000        ; 5.267      ; 3.442      ;
+; -1.779 ; div10:inst10|inst  ; div10:inst10|inst  ; div10:inst10|inst ; div10:inst11|inst ; -0.500       ; 5.267      ; 3.442      ;
+; 2.079  ; div10:inst10|inst2 ; div10:inst10|inst2 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.153      ;
+; 2.326  ; div10:inst10|inst3 ; div10:inst10|inst2 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.400      ;
+; 2.328  ; div10:inst10|inst3 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.402      ;
+; 2.466  ; div10:inst10|inst1 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.540      ;
+; 2.466  ; div10:inst10|inst1 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.540      ;
+; 2.476  ; div10:inst10|inst3 ; div10:inst10|inst3 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.550      ;
+; 2.670  ; div10:inst10|inst2 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.744      ;
+; 2.888  ; div10:inst10|inst3 ; div10:inst10|inst1 ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.962      ;
+; 2.899  ; div10:inst10|inst2 ; div10:inst10|inst  ; div10:inst11|inst ; div10:inst11|inst ; 0.000        ; 0.000      ; 2.973      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst14|inst'                                                                                                         ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -1.959 ; div10:inst13|inst  ; div10:inst13|inst  ; div10:inst13|inst ; div10:inst14|inst ; 0.000        ; 4.572      ; 3.067      ;
+; -1.958 ; div10:inst13|inst  ; div10:inst13|inst2 ; div10:inst13|inst ; div10:inst14|inst ; 0.000        ; 4.572      ; 3.068      ;
+; -1.459 ; div10:inst13|inst  ; div10:inst13|inst  ; div10:inst13|inst ; div10:inst14|inst ; -0.500       ; 4.572      ; 3.067      ;
+; -1.458 ; div10:inst13|inst  ; div10:inst13|inst2 ; div10:inst13|inst ; div10:inst14|inst ; -0.500       ; 4.572      ; 3.068      ;
+; 2.095  ; div10:inst13|inst3 ; div10:inst13|inst3 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.169      ;
+; 2.096  ; div10:inst13|inst3 ; div10:inst13|inst2 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.170      ;
+; 2.099  ; div10:inst13|inst3 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.173      ;
+; 2.292  ; div10:inst13|inst2 ; div10:inst13|inst2 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.366      ;
+; 2.340  ; div10:inst13|inst1 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.414      ;
+; 2.347  ; div10:inst13|inst1 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.421      ;
+; 2.443  ; div10:inst13|inst2 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.517      ;
+; 2.855  ; div10:inst13|inst2 ; div10:inst13|inst  ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.929      ;
+; 2.925  ; div10:inst13|inst3 ; div10:inst13|inst1 ; div10:inst14|inst ; div10:inst14|inst ; 0.000        ; 0.000      ; 2.999      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                                 ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+; -1.103 ; div10:inst15|inst  ; div10:inst15|inst  ; div10:inst15|inst ; clk         ; 0.000        ; 3.716      ; 3.067      ;
+; -1.096 ; div10:inst15|inst  ; div10:inst15|inst2 ; div10:inst15|inst ; clk         ; 0.000        ; 3.716      ; 3.074      ;
+; -0.603 ; div10:inst15|inst  ; div10:inst15|inst  ; div10:inst15|inst ; clk         ; -0.500       ; 3.716      ; 3.067      ;
+; -0.596 ; div10:inst15|inst  ; div10:inst15|inst2 ; div10:inst15|inst ; clk         ; -0.500       ; 3.716      ; 3.074      ;
+; 2.050  ; div10:inst15|inst2 ; div10:inst15|inst2 ; clk               ; clk         ; 0.000        ; 0.000      ; 2.124      ;
+; 2.092  ; div10:inst15|inst1 ; div10:inst15|inst1 ; clk               ; clk         ; 0.000        ; 0.000      ; 2.166      ;
+; 2.096  ; div10:inst15|inst1 ; div10:inst15|inst  ; clk               ; clk         ; 0.000        ; 0.000      ; 2.170      ;
+; 2.363  ; div10:inst15|inst3 ; div10:inst15|inst3 ; clk               ; clk         ; 0.000        ; 0.000      ; 2.437      ;
+; 2.370  ; div10:inst15|inst3 ; div10:inst15|inst2 ; clk               ; clk         ; 0.000        ; 0.000      ; 2.444      ;
+; 2.377  ; div10:inst15|inst3 ; div10:inst15|inst  ; clk               ; clk         ; 0.000        ; 0.000      ; 2.451      ;
+; 2.379  ; div10:inst15|inst3 ; div10:inst15|inst1 ; clk               ; clk         ; 0.000        ; 0.000      ; 2.453      ;
+; 3.002  ; div10:inst15|inst2 ; div10:inst15|inst1 ; clk               ; clk         ; 0.000        ; 0.000      ; 3.076      ;
+; 3.242  ; div10:inst15|inst2 ; div10:inst15|inst  ; clk               ; clk         ; 0.000        ; 0.000      ; 3.316      ;
++--------+--------------------+--------------------+-------------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst15|inst'                                                                                                         ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -0.821 ; div10:inst14|inst  ; div10:inst14|inst  ; div10:inst14|inst ; div10:inst15|inst ; 0.000        ; 3.347      ; 2.980      ;
+; -0.818 ; div10:inst14|inst  ; div10:inst14|inst2 ; div10:inst14|inst ; div10:inst15|inst ; 0.000        ; 3.347      ; 2.983      ;
+; -0.321 ; div10:inst14|inst  ; div10:inst14|inst  ; div10:inst14|inst ; div10:inst15|inst ; -0.500       ; 3.347      ; 2.980      ;
+; -0.318 ; div10:inst14|inst  ; div10:inst14|inst2 ; div10:inst14|inst ; div10:inst15|inst ; -0.500       ; 3.347      ; 2.983      ;
+; 2.117  ; div10:inst14|inst3 ; div10:inst14|inst3 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.191      ;
+; 2.122  ; div10:inst14|inst3 ; div10:inst14|inst2 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.196      ;
+; 2.127  ; div10:inst14|inst3 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.201      ;
+; 2.343  ; div10:inst14|inst1 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.417      ;
+; 2.355  ; div10:inst14|inst2 ; div10:inst14|inst2 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.429      ;
+; 2.362  ; div10:inst14|inst2 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.436      ;
+; 2.425  ; div10:inst14|inst1 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 2.499      ;
+; 2.947  ; div10:inst14|inst3 ; div10:inst14|inst1 ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 3.021      ;
+; 3.041  ; div10:inst14|inst2 ; div10:inst14|inst  ; div10:inst15|inst ; div10:inst15|inst ; 0.000        ; 0.000      ; 3.115      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst13|inst'                                                                                                         ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock      ; Latch Clock       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+; -0.760 ; div10:inst12|inst  ; div10:inst12|inst  ; div10:inst12|inst ; div10:inst13|inst ; 0.000        ; 3.373      ; 3.067      ;
+; -0.752 ; div10:inst12|inst  ; div10:inst12|inst2 ; div10:inst12|inst ; div10:inst13|inst ; 0.000        ; 3.373      ; 3.075      ;
+; -0.260 ; div10:inst12|inst  ; div10:inst12|inst  ; div10:inst12|inst ; div10:inst13|inst ; -0.500       ; 3.373      ; 3.067      ;
+; -0.252 ; div10:inst12|inst  ; div10:inst12|inst2 ; div10:inst12|inst ; div10:inst13|inst ; -0.500       ; 3.373      ; 3.075      ;
+; 2.085  ; div10:inst12|inst2 ; div10:inst12|inst2 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.159      ;
+; 2.093  ; div10:inst12|inst2 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.167      ;
+; 2.340  ; div10:inst12|inst1 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.414      ;
+; 2.344  ; div10:inst12|inst1 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.418      ;
+; 2.347  ; div10:inst12|inst3 ; div10:inst12|inst3 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.421      ;
+; 2.348  ; div10:inst12|inst3 ; div10:inst12|inst2 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.422      ;
+; 2.428  ; div10:inst12|inst3 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.502      ;
+; 2.910  ; div10:inst12|inst2 ; div10:inst12|inst  ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 2.984      ;
+; 3.035  ; div10:inst12|inst3 ; div10:inst12|inst1 ; div10:inst13|inst ; div10:inst13|inst ; 0.000        ; 0.000      ; 3.109      ;
++--------+--------------------+--------------------+-------------------+-------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'div10:inst9|inst'                                                                                                     ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node         ; To Node           ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+; 2.051 ; div10:inst8|inst3 ; div10:inst8|inst3 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.125      ;
+; 2.053 ; div10:inst8|inst3 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.127      ;
+; 2.059 ; div10:inst8|inst3 ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.133      ;
+; 2.063 ; div10:inst8|inst1 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.137      ;
+; 2.276 ; div10:inst8|inst  ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.350      ;
+; 2.353 ; div10:inst8|inst2 ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.427      ;
+; 2.365 ; div10:inst8|inst2 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.439      ;
+; 2.842 ; div10:inst8|inst  ; div10:inst8|inst2 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.916      ;
+; 2.882 ; div10:inst8|inst1 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 2.956      ;
+; 2.993 ; div10:inst8|inst3 ; div10:inst8|inst1 ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 3.067      ;
+; 3.047 ; div10:inst8|inst2 ; div10:inst8|inst  ; div10:inst9|inst ; div10:inst9|inst ; 0.000        ; 0.000      ; 3.121      ;
++-------+-------------------+-------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------+
+; Setup Transfers                                                                   ;
++-------------------+-------------------+----------+----------+----------+----------+
+; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------+-------------------+----------+----------+----------+----------+
+; clk               ; clk               ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst15|inst ; clk               ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst9|inst  ; div10:inst9|inst  ; 11       ; 0        ; 0        ; 0        ;
+; div10:inst9|inst  ; div10:inst10|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst10|inst ; div10:inst10|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst10|inst ; div10:inst11|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst11|inst ; div10:inst11|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst11|inst ; div10:inst12|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst12|inst ; div10:inst12|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst12|inst ; div10:inst13|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst13|inst ; div10:inst13|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst13|inst ; div10:inst14|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst14|inst ; div10:inst14|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst14|inst ; div10:inst15|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst15|inst ; div10:inst15|inst ; 9        ; 0        ; 0        ; 0        ;
++-------------------+-------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------+
+; Hold Transfers                                                                    ;
++-------------------+-------------------+----------+----------+----------+----------+
+; From Clock        ; To Clock          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------+-------------------+----------+----------+----------+----------+
+; clk               ; clk               ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst15|inst ; clk               ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst9|inst  ; div10:inst9|inst  ; 11       ; 0        ; 0        ; 0        ;
+; div10:inst9|inst  ; div10:inst10|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst10|inst ; div10:inst10|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst10|inst ; div10:inst11|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst11|inst ; div10:inst11|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst11|inst ; div10:inst12|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst12|inst ; div10:inst12|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst12|inst ; div10:inst13|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst13|inst ; div10:inst13|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst13|inst ; div10:inst14|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst14|inst ; div10:inst14|inst ; 9        ; 0        ; 0        ; 0        ;
+; div10:inst14|inst ; div10:inst15|inst ; 2        ; 2        ; 0        ; 0        ;
+; div10:inst15|inst ; div10:inst15|inst ; 9        ; 0        ; 0        ; 0        ;
++-------------------+-------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 33    ; 33   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 33    ; 33   ;
++---------------------------------+-------+------+
+
+
++------------------------------------------------------------+
+; Clock Status Summary                                       ;
++-------------------+-------------------+------+-------------+
+; Target            ; Clock             ; Type ; Status      ;
++-------------------+-------------------+------+-------------+
+; clk               ; clk               ; Base ; Constrained ;
+; div10:inst9|inst  ; div10:inst9|inst  ; Base ; Constrained ;
+; div10:inst10|inst ; div10:inst10|inst ; Base ; Constrained ;
+; div10:inst11|inst ; div10:inst11|inst ; Base ; Constrained ;
+; div10:inst12|inst ; div10:inst12|inst ; Base ; Constrained ;
+; div10:inst13|inst ; div10:inst13|inst ; Base ; Constrained ;
+; div10:inst14|inst ; div10:inst14|inst ; Base ; Constrained ;
+; div10:inst15|inst ; div10:inst15|inst ; Base ; Constrained ;
++-------------------+-------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; clk        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; div0        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div1M       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div1k       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10M      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10k      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100M     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100k     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; clk        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; div0        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div1M       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div1k       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10M      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div10k      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100M     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; div100k     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+<<<<message_ref>>>>
+C:/temp/div100M/db/div100M.sta.qmsg
+<<<</message_ref>>>>
+
+

@@ -1,0 +1,83 @@
+Assembler report for div10
+Tue Jun 12 15:10:10 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/Temp/div10/output_files/div10.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Tue Jun 12 15:10:10 2018 ;
+; Revision Name         ; div10                                 ;
+; Top-level Entity Name ; div10                                 ;
+; Family                ; MAX 10                                ;
+; Device                ; 10M50DAF484C7G                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++--------------------------------------+
+; Assembler Generated Files            ;
++--------------------------------------+
+; File Name                            ;
++--------------------------------------+
+; C:/Temp/div10/output_files/div10.sof ;
++--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Assembler Device Options: C:/Temp/div10/output_files/div10.sof ;
++----------------+-----------------------------------------------+
+; Option         ; Setting                                       ;
++----------------+-----------------------------------------------+
+; Device         ; 10M50DAF484C7G                                ;
+; JTAG usercode  ; 0x002711D6                                    ;
+; Checksum       ; 0x002711D6                                    ;
++----------------+-----------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+<<<<message_ref>>>>
+C:/Temp/div10/db/div10.asm.qmsg
+<<<</message_ref>>>>
+
+
