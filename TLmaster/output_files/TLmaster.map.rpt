@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TLmaster
-Wed Oct 24 16:24:31 2018
+Fri Nov 02 15:42:33 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 24 16:24:31 2018       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 02 15:42:33 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; TLmaster                                    ;
 ; Top-level Entity Name              ; TLmaster                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 22                                          ;
-;     Total combinational functions  ; 22                                          ;
-;     Dedicated logic registers      ; 5                                           ;
-; Total registers                    ; 5                                           ;
-; Total pins                         ; 25                                          ;
+; Total logic elements               ; 35                                          ;
+;     Total combinational functions  ; 35                                          ;
+;     Dedicated logic registers      ; 8                                           ;
+; Total registers                    ; 8                                           ;
+; Total pins                         ; 32                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -161,7 +161,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -170,44 +171,45 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path               ; Library ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
+; ../TLController/TLController.bdf ; yes             ; User Block Diagram/Schematic File        ; C:/local/TLController/TLController.bdf     ;         ;
+; ../CarCounter/CarCounter.bdf     ; yes             ; User Block Diagram/Schematic File        ; C:/local/CarCounter/CarCounter.bdf         ;         ;
 ; TLmaster.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/local/TLmaster/TLmaster.bdf             ;         ;
 ; 7seg.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/local/7seg/7seg.bdf                     ;         ;
-; tlcontroller.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/local/tlcontroller/tlcontroller.bdf     ;         ;
 ; t4_8.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/local/t4_8/t4_8.bdf                     ;         ;
 ; trafficdecoder.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/local/trafficdecoder/trafficdecoder.bdf ;         ;
 +----------------------------------+-----------------+------------------------------------------+--------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 22                      ;
-;                                             ;                         ;
-; Total combinational functions               ; 22                      ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 4                       ;
-;     -- 3 input functions                    ; 15                      ;
-;     -- <=2 input functions                  ; 3                       ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 22                      ;
-;     -- arithmetic mode                      ; 0                       ;
-;                                             ;                         ;
-; Total registers                             ; 5                       ;
-;     -- Dedicated logic registers            ; 5                       ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 25                      ;
-;                                             ;                         ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; TLController:inst|inst7 ;
-; Maximum fan-out                             ; 19                      ;
-; Total fan-out                               ; 127                     ;
-; Average fan-out                             ; 1.65                    ;
-+---------------------------------------------+-------------------------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 35                        ;
+;                                             ;                           ;
+; Total combinational functions               ; 35                        ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 4                         ;
+;     -- 3 input functions                    ; 27                        ;
+;     -- <=2 input functions                  ; 4                         ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 35                        ;
+;     -- arithmetic mode                      ; 0                         ;
+;                                             ;                           ;
+; Total registers                             ; 8                         ;
+;     -- Dedicated logic registers            ; 8                         ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 32                        ;
+;                                             ;                           ;
+; Embedded Multiplier 9-bit elements          ; 0                         ;
+;                                             ;                           ;
+; Maximum fan-out node                        ; TLController:inst10|inst7 ;
+; Maximum fan-out                             ; 20                        ;
+; Total fan-out                               ; 189                       ;
+; Average fan-out                             ; 1.77                      ;
++---------------------------------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -215,10 +217,12 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name            ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+----------------+--------------+
-; |TLmaster                  ; 22 (0)              ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 25   ; 0            ; 0          ; |TLmaster                      ; TLmaster       ; work         ;
+; |TLmaster                  ; 35 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 32   ; 0            ; 0          ; |TLmaster                      ; TLmaster       ; work         ;
 ;    |7seg:inst1|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|7seg:inst1           ; 7seg           ; work         ;
+;    |7seg:inst7|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|7seg:inst7           ; 7seg           ; work         ;
+;    |CarCounter:inst17|     ; 5 (5)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|CarCounter:inst17    ; CarCounter     ; work         ;
 ;    |T4_8:inst2|            ; 3 (3)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|T4_8:inst2           ; T4_8           ; work         ;
-;    |TLController:inst|     ; 4 (4)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|TLController:inst    ; TLController   ; work         ;
+;    |TLController:inst10|   ; 4 (4)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|TLController:inst10  ; TLController   ; work         ;
 ;    |TrafficDecoder:bbbbb|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TLmaster|TrafficDecoder:bbbbb ; TrafficDecoder ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -229,10 +233,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -244,8 +248,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; TLController:inst|inst6                ; 17      ;
-; TLController:inst|inst7                ; 19      ;
+; TLController:inst10|inst6              ; 18      ;
+; TLController:inst10|inst7              ; 20      ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
@@ -255,18 +259,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 25                          ;
-; cycloneiii_ff         ; 5                           ;
-;     CLR               ; 5                           ;
-; cycloneiii_lcell_comb ; 31                          ;
-;     normal            ; 31                          ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 15                          ;
+; boundary_port         ; 32                          ;
+; cycloneiii_ff         ; 8                           ;
+;     CLR               ; 8                           ;
+; cycloneiii_lcell_comb ; 52                          ;
+;     normal            ; 52                          ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 27                          ;
 ;         4 data inputs ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.71                        ;
+; Average LUT depth     ; 1.72                        ;
 +-----------------------+-----------------------------+
 
 

@@ -84,15 +84,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "sensorW",
+					"name" : "seg_a_car",
 					"strict" : false
 				},
 				{
-					"name" : "sensorE",
+					"name" : "seg_b_car",
 					"strict" : false
 				},
 				{
-					"name" : "sensor",
+					"name" : "seg_c_car",
+					"strict" : false
+				},
+				{
+					"name" : "seg_d_car",
+					"strict" : false
+				},
+				{
+					"name" : "seg_e_car",
+					"strict" : false
+				},
+				{
+					"name" : "seg_f_car",
+					"strict" : false
+				},
+				{
+					"name" : "seg_g_car",
+					"strict" : false
+				},
+				{
+					"name" : "seg_dp_car",
 					"strict" : false
 				},
 				{
@@ -101,6 +121,14 @@
 				},
 				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "sensorW",
+					"strict" : false
+				},
+				{
+					"name" : "sensorE",
 					"strict" : false
 				}
 			]

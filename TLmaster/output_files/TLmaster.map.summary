@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Oct 24 16:24:31 2018
+Analysis & Synthesis Status : Successful - Fri Nov 02 15:42:33 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : TLmaster
 Top-level Entity Name : TLmaster
 Family : MAX 10
-Total logic elements : 22
-    Total combinational functions : 22
-    Dedicated logic registers : 5
-Total registers : 5
-Total pins : 25
+Total logic elements : 35
+    Total combinational functions : 35
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 32
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
