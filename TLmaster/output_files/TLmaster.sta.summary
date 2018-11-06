@@ -3,98 +3,98 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.388
-TNS   : -5.580
+Slack : -3.626
+TNS   : -4.616
 
-Type  : Slow 1200mV 85C Model Setup 'sensorE'
-Slack : -0.162
-TNS   : -0.451
+Type  : Slow 1200mV 85C Model Setup 'sensor1'
+Slack : -0.167
+TNS   : -0.486
 
-Type  : Slow 1200mV 85C Model Hold 'sensorE'
-Slack : 0.341
+Type  : Slow 1200mV 85C Model Hold 'sensor1'
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.378
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'sensorE'
-Slack : -1.887
-TNS   : -5.661
+Type  : Slow 1200mV 85C Model Recovery 'sensor1'
+Slack : -1.436
+TNS   : -4.308
 
-Type  : Slow 1200mV 85C Model Removal 'sensorE'
-Slack : 1.771
+Type  : Slow 1200mV 85C Model Removal 'sensor1'
+Slack : 1.535
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -10.015
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sensorE'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sensor1'
 Slack : -3.000
 TNS   : -7.209
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -3.927
-TNS   : -4.735
+Slack : -3.212
+TNS   : -3.850
 
-Type  : Slow 1200mV 0C Model Setup 'sensorE'
-Slack : -0.059
-TNS   : -0.145
+Type  : Slow 1200mV 0C Model Setup 'sensor1'
+Slack : -0.061
+TNS   : -0.171
 
-Type  : Slow 1200mV 0C Model Hold 'sensorE'
-Slack : 0.306
+Type  : Slow 1200mV 0C Model Hold 'sensor1'
+Slack : 0.308
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.339
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'sensorE'
-Slack : -1.833
-TNS   : -5.499
+Type  : Slow 1200mV 0C Model Recovery 'sensor1'
+Slack : -1.429
+TNS   : -4.287
 
-Type  : Slow 1200mV 0C Model Removal 'sensorE'
-Slack : 1.694
+Type  : Slow 1200mV 0C Model Removal 'sensor1'
+Slack : 1.507
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
 TNS   : -10.015
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sensorE'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sensor1'
 Slack : -3.000
 TNS   : -7.209
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -2.112
-TNS   : -2.112
+Slack : -1.730
+TNS   : -1.730
 
-Type  : Fast 1200mV 0C Model Setup 'sensorE'
+Type  : Fast 1200mV 0C Model Setup 'sensor1'
 Slack : 0.493
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'sensorE'
-Slack : 0.148
+Type  : Fast 1200mV 0C Model Hold 'sensor1'
+Slack : 0.150
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.166
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'sensorE'
-Slack : -0.331
-TNS   : -0.993
+Type  : Fast 1200mV 0C Model Recovery 'sensor1'
+Slack : -0.068
+TNS   : -0.204
 
-Type  : Fast 1200mV 0C Model Removal 'sensorE'
-Slack : 0.653
+Type  : Fast 1200mV 0C Model Removal 'sensor1'
+Slack : 0.514
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -8.390
+TNS   : -8.760
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sensorE'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sensor1'
 Slack : -3.000
 TNS   : -6.000
 

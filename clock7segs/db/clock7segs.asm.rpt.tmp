@@ -1,0 +1,81 @@
+Assembler report for clock7segs
+Tue Nov 06 13:44:31 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: C:/local/clock7segs/output_files/clock7segs.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Tue Nov 06 13:44:31 2018 ;
+; Revision Name         ; clock7segs                            ;
+; Top-level Entity Name ; clock7segs                            ;
+; Family                ; MAX 10                                ;
+; Device                ; 10M50DAF484C7G                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++-------------------------------------------------+
+; Assembler Generated Files                       ;
++-------------------------------------------------+
+; File Name                                       ;
++-------------------------------------------------+
+; C:/local/clock7segs/output_files/clock7segs.sof ;
++-------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Assembler Device Options: C:/local/clock7segs/output_files/clock7segs.sof ;
++----------------+----------------------------------------------------------+
+; Option         ; Setting                                                  ;
++----------------+----------------------------------------------------------+
+; JTAG usercode  ; 0x0027933A                                               ;
+; Checksum       ; 0x0027933A                                               ;
++----------------+----------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+<<<<message_ref>>>>
+C:/local/clock7segs/db/clock7segs.asm.qmsg
+<<<</message_ref>>>>
+
+

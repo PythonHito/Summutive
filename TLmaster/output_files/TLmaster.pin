@@ -92,7 +92,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 6         :                
 GND                          : A22       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA1       :        :                   :         : 3         :                
-sensorW                      : AA2       : input  : 2.5 V             :         : 3         : Y              
+sensor1                      : AA2       : input  : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 3         :                
 GND                          : AA4       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 3         :                
@@ -100,12 +100,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   :         : 3         :                
-MREDS                        : AA10      : output : 2.5 V             :         : 3         : Y              
+R12                          : AA10      : output : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA11      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 4         :                
-SGREENN                      : AA15      : output : 2.5 V             :         : 4         : Y              
+G21                          : AA15      : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA17      :        :                   :         : 4         :                
 GND                          : AA18      : gnd    :                   :         :           :                
@@ -125,7 +125,7 @@ clk                          : AB9       : input  : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 4         :                
-SYELLOWS                     : AB13      : output : 2.5 V             :         : 4         : Y              
+Y22                          : AB13      : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 4         :                
@@ -491,11 +491,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :      
 GND                          : V2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 3         :                
-SYELLOWN                     : V5        : output : 2.5 V             :         : 3         : Y              
+Y21                          : V5        : output : 2.5 V             :         : 3         : Y              
 GND                          : V6        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
-MGREENN                      : V9        : output : 2.5 V             :         : 3         : Y              
+G11                          : V9        : output : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 4         :                
@@ -515,13 +515,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
-SREDN                        : W7        : output : 2.5 V             :         : 3         : Y              
+R21                          : W7        : output : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 3         :                
-MREDN                        : W9        : output : 2.5 V             :         : 3         : Y              
-MYELLOWN                     : W10       : output : 2.5 V             :         : 3         : Y              
+R11                          : W9        : output : 2.5 V             :         : 3         : Y              
+Y11                          : W10       : output : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W12       :        :                   :         : 4         :                
-SGREENS                      : W13       : output : 2.5 V             :         : 4         : Y              
+G22                          : W13       : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W15       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :         : 4         :                
@@ -534,14 +534,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 3         :                
-sensorE                      : Y4        : input  : 2.5 V             :         : 3         : Y              
+sensor2                      : Y4        : input  : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3         :                
-MGREENS                      : Y7        : output : 2.5 V             :         : 3         : Y              
-MYELLOWS                     : Y8        : output : 2.5 V             :         : 3         : Y              
+G12                          : Y7        : output : 2.5 V             :         : 3         : Y              
+Y12                          : Y8        : output : 2.5 V             :         : 3         : Y              
 GND                          : Y9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
-SREDS                        : Y11       : output : 2.5 V             :         : 4         : Y              
+R22                          : Y11       : output : 2.5 V             :         : 4         : Y              
 GND                          : Y12       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 4         :                

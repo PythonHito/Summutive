@@ -1,5 +1,5 @@
 Fitter report for TLmaster
-Fri Nov 02 15:42:43 2018
+Tue Nov 06 13:46:45 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 02 15:42:43 2018       ;
+; Fitter Status                      ; Successful - Tue Nov 06 13:46:45 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; TLmaster                                    ;
 ; Top-level Entity Name              ; TLmaster                                    ;
@@ -159,8 +159,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processors 3-4         ;   0.6%      ;
+;     Processor 2            ;   0.7%      ;
+;     Processors 3-4         ;   0.7%      ;
 +----------------------------+-------------+
 
 
@@ -262,7 +262,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.2%    ;
-; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 0.6%    ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.6% / 0.9%    ;
 ; Maximum fan-out                             ; 20                    ;
 ; Highest non-global fan-out                  ; 20                    ;
 ; Total fan-out                               ; 201                   ;
@@ -351,8 +351,8 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; clk     ; AB9   ; 3        ; 34           ; 0            ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; reset   ; B8    ; 7        ; 46           ; 54           ; 28           ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; sensorE ; Y4    ; 3        ; 24           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; sensorW ; AA2   ; 3        ; 18           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; sensor1 ; AA2   ; 3        ; 18           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; sensor2 ; Y4    ; 3        ; 24           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -361,18 +361,18 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; MGREENN    ; V9    ; 3        ; 31           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; MGREENS    ; Y7    ; 3        ; 20           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; MREDN      ; W9    ; 3        ; 22           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; MREDS      ; AA10  ; 3        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; MYELLOWN   ; W10   ; 3        ; 24           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; MYELLOWS   ; Y8    ; 3        ; 20           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SGREENN    ; AA15  ; 4        ; 54           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SGREENS    ; W13   ; 4        ; 46           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SREDN      ; W7    ; 3        ; 24           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SREDS      ; Y11   ; 4        ; 36           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SYELLOWN   ; V5    ; 3        ; 14           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; SYELLOWS   ; AB13  ; 4        ; 40           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; G11        ; V9    ; 3        ; 31           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; G12        ; Y7    ; 3        ; 20           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; G21        ; AA15  ; 4        ; 54           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; G22        ; W13   ; 4        ; 46           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; R11        ; W9    ; 3        ; 22           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; R12        ; AA10  ; 3        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; R21        ; W7    ; 3        ; 24           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; R22        ; Y11   ; 4        ; 36           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; Y11        ; W10   ; 3        ; 24           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; Y12        ; Y8    ; 3        ; 20           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; Y21        ; V5    ; 3        ; 14           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; Y22        ; AB13  ; 4        ; 40           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; seg_a      ; C14   ; 7        ; 58           ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; seg_a_car  ; C18   ; 7        ; 69           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; seg_b      ; E15   ; 7        ; 74           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -453,7 +453,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; A21      ; 371        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; A22      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AA1      ; 133        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA2      ; 135        ; 3        ; sensorW                                        ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AA2      ; 135        ; 3        ; sensor1                                        ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AA3      ; 153        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
 ; AA4      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; AA5      ; 157        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -461,12 +461,12 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; AA7      ; 158        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA8      ; 165        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA9      ; 169        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA10     ; 170        ; 3        ; MREDS                                          ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AA10     ; 170        ; 3        ; R12                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AA11     ; 180        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA12     ; 182        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA13     ; 197        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
 ; AA14     ; 201        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA15     ; 205        ; 4        ; SGREENN                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AA15     ; 205        ; 4        ; G21                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AA16     ; 211        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA17     ; 212        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA18     ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -486,7 +486,7 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; AB10     ; 177        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB11     ; 179        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB12     ; 181        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AB13     ; 183        ; 4        ; SYELLOWS                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AB13     ; 183        ; 4        ; Y22                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AB14     ; 199        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB15     ; 203        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB16     ; 209        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -852,11 +852,11 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; V2       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; V3       ; 95         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V4       ; 125        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; V5       ; 127        ; 3        ; SYELLOWN                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; V5       ; 127        ; 3        ; Y21                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; V6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; V7       ; 136        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V8       ; 138        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; V9       ; 160        ; 3        ; MGREENN                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; V9       ; 160        ; 3        ; G11                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; V10      ; 162        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V11      ; 172        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V12      ; 174        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -876,13 +876,13 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; W4       ; 132        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W5       ; 124        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W6       ; 126        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; W7       ; 148        ; 3        ; SREDN                                          ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; W7       ; 148        ; 3        ; R21                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; W8       ; 150        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; W9       ; 144        ; 3        ; MREDN                                          ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; W10      ; 146        ; 3        ; MYELLOWN                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; W9       ; 144        ; 3        ; R11                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; W10      ; 146        ; 3        ; Y11                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; W11      ; 173        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W12      ; 193        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; W13      ; 195        ; 4        ; SGREENS                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; W13      ; 195        ; 4        ; G22                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; W14      ; 194        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W15      ; 206        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W16      ; 218        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -895,14 +895,14 @@ The pin-out file can be found in C:/local/TLmaster/output_files/TLmaster.pin.
 ; Y1       ; 129        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y2       ; 131        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y3       ; 149        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y4       ; 151        ; 3        ; sensorE                                        ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y4       ; 151        ; 3        ; sensor2                                        ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; Y5       ; 137        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y6       ; 139        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y7       ; 141        ; 3        ; MGREENS                                        ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; Y8       ; 143        ; 3        ; MYELLOWS                                       ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y7       ; 141        ; 3        ; G12                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y8       ; 143        ; 3        ; Y12                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; Y9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; Y10      ; 168        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y11      ; 175        ; 4        ; SREDS                                          ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; Y11      ; 175        ; 4        ; R22                                            ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; Y12      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; Y13      ; 200        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y14      ; 202        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -931,18 +931,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; seg_f      ; Incomplete set of assignments ;
 ; seg_g      ; Incomplete set of assignments ;
 ; seg_dp     ; Incomplete set of assignments ;
-; MREDN      ; Incomplete set of assignments ;
-; MREDS      ; Incomplete set of assignments ;
-; MYELLOWS   ; Incomplete set of assignments ;
-; MYELLOWN   ; Incomplete set of assignments ;
-; MGREENS    ; Incomplete set of assignments ;
-; MGREENN    ; Incomplete set of assignments ;
-; SREDN      ; Incomplete set of assignments ;
-; SREDS      ; Incomplete set of assignments ;
-; SYELLOWN   ; Incomplete set of assignments ;
-; SYELLOWS   ; Incomplete set of assignments ;
-; SGREENN    ; Incomplete set of assignments ;
-; SGREENS    ; Incomplete set of assignments ;
 ; seg_a_car  ; Incomplete set of assignments ;
 ; seg_b_car  ; Incomplete set of assignments ;
 ; seg_c_car  ; Incomplete set of assignments ;
@@ -951,26 +939,38 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; seg_f_car  ; Incomplete set of assignments ;
 ; seg_g_car  ; Incomplete set of assignments ;
 ; seg_dp_car ; Incomplete set of assignments ;
+; R11        ; Incomplete set of assignments ;
+; R12        ; Incomplete set of assignments ;
+; Y11        ; Incomplete set of assignments ;
+; Y12        ; Incomplete set of assignments ;
+; G11        ; Incomplete set of assignments ;
+; G12        ; Incomplete set of assignments ;
+; R21        ; Incomplete set of assignments ;
+; R22        ; Incomplete set of assignments ;
+; Y21        ; Incomplete set of assignments ;
+; Y22        ; Incomplete set of assignments ;
+; G21        ; Incomplete set of assignments ;
+; G22        ; Incomplete set of assignments ;
 ; clk        ; Incomplete set of assignments ;
 ; reset      ; Incomplete set of assignments ;
-; sensorW    ; Incomplete set of assignments ;
-; sensorE    ; Incomplete set of assignments ;
+; sensor1    ; Incomplete set of assignments ;
+; sensor2    ; Incomplete set of assignments ;
 +------------+-------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                 ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name            ; Entity Name    ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
-; |TLmaster                  ; 36 (1)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 32   ; 0            ; 28 (1)       ; 0 (0)             ; 8 (0)            ; 0          ; |TLmaster                      ; TLmaster       ; work         ;
-;    |7seg:inst1|            ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 1 (1)            ; 0          ; |TLmaster|7seg:inst1           ; 7seg           ; work         ;
-;    |7seg:inst7|            ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|7seg:inst7           ; 7seg           ; work         ;
-;    |CarCounter:inst17|     ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|CarCounter:inst17    ; CarCounter     ; work         ;
-;    |T4_8:inst2|            ; 3 (3)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; 0          ; |TLmaster|T4_8:inst2           ; T4_8           ; work         ;
-;    |TLController:inst10|   ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|TLController:inst10  ; TLController   ; work         ;
-;    |TrafficDecoder:bbbbb|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|TrafficDecoder:bbbbb ; TrafficDecoder ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------+----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                        ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                 ; Entity Name  ; Library Name ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------+--------------+--------------+
+; |TLmaster                      ; 36 (1)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 32   ; 0            ; 28 (1)       ; 0 (0)             ; 8 (0)            ; 0          ; |TLmaster                           ; TLmaster     ; work         ;
+;    |7seg:7seg1|                ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|7seg:7seg1                ; 7seg         ; work         ;
+;    |7seg:7seg2|                ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 1 (1)            ; 0          ; |TLmaster|7seg:7seg2                ; 7seg         ; work         ;
+;    |CarCounter:inst|           ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|CarCounter:inst           ; CarCounter   ; work         ;
+;    |Lightdecoder:Lightdecoder| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |TLmaster|Lightdecoder:Lightdecoder ; Lightdecoder ; work         ;
+;    |T4_8:T4_8|                 ; 3 (3)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; 0          ; |TLmaster|T4_8:T4_8                 ; T4_8         ; work         ;
+;    |TLController:inst2|        ; 5 (5)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0          ; |TLmaster|TLController:inst2        ; TLController ; work         ;
++--------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -987,18 +987,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_f      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_g      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_dp     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MREDN      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MREDS      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MYELLOWS   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MYELLOWN   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MGREENS    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; MGREENN    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SREDN      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SREDS      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYELLOWN   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYELLOWS   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SGREENN    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SGREENS    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_a_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_b_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_c_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -1007,74 +995,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_f_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_g_car  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; seg_dp_car ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; R11        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; R12        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Y11        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Y12        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; G11        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; G12        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; R21        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; R22        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Y21        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Y22        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; G21        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; G22        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; clk        ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; reset      ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; sensorW    ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; sensorE    ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; sensor1    ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; sensor2    ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                 ;
-+----------------------------------+-------------------+---------+
-; Source Pin / Fanout              ; Pad To Core Index ; Setting ;
-+----------------------------------+-------------------+---------+
-; clk                              ;                   ;         ;
-;      - TLController:inst10|inst8 ; 1                 ; 0       ;
-;      - TLController:inst10|inst6 ; 1                 ; 0       ;
-;      - TLController:inst10|inst7 ; 1                 ; 0       ;
-;      - T4_8:inst2|inst16         ; 1                 ; 0       ;
-;      - T4_8:inst2|inst15         ; 1                 ; 0       ;
-; reset                            ;                   ;         ;
-;      - TLController:inst10|inst8 ; 0                 ; 6       ;
-;      - T4_8:inst2|inst16         ; 0                 ; 6       ;
-;      - T4_8:inst2|inst15         ; 0                 ; 6       ;
-;      - TLController:inst10|inst6 ; 0                 ; 6       ;
-;      - TLController:inst10|inst7 ; 0                 ; 6       ;
-;      - CarCounter:inst17|inst18  ; 0                 ; 6       ;
-; sensorW                          ;                   ;         ;
-;      - CarCounter:inst17|inst21  ; 0                 ; 6       ;
-; sensorE                          ;                   ;         ;
-;      - CarCounter:inst17|inst21  ; 1                 ; 0       ;
-+----------------------------------+-------------------+---------+
++------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                             ;
++------------------------------+-------------------+---------+
+; Source Pin / Fanout          ; Pad To Core Index ; Setting ;
++------------------------------+-------------------+---------+
+; clk                          ;                   ;         ;
+;      - TLController:inst2|Q0 ; 1                 ; 0       ;
+;      - TLController:inst2|Q2 ; 1                 ; 0       ;
+;      - TLController:inst2|Q1 ; 1                 ; 0       ;
+;      - T4_8:T4_8|Q0          ; 1                 ; 0       ;
+;      - T4_8:T4_8|Q1          ; 1                 ; 0       ;
+; reset                        ;                   ;         ;
+;      - TLController:inst2|Q0 ; 0                 ; 6       ;
+;      - T4_8:T4_8|Q0          ; 0                 ; 6       ;
+;      - T4_8:T4_8|Q1          ; 0                 ; 6       ;
+;      - TLController:inst2|Q2 ; 0                 ; 6       ;
+;      - TLController:inst2|Q1 ; 0                 ; 6       ;
+;      - CarCounter:inst|OR1   ; 0                 ; 6       ;
+; sensor1                      ;                   ;         ;
+;      - CarCounter:inst|OR2   ; 0                 ; 0       ;
+; sensor2                      ;                   ;         ;
+;      - CarCounter:inst|OR2   ; 1                 ; 6       ;
++------------------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                      ;
-+--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CarCounter:inst17|inst18 ; LCCOMB_X35_Y4_N8  ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; CarCounter:inst17|inst21 ; LCCOMB_X25_Y1_N20 ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK18           ; --                        ;
-; clk                      ; PIN_AB9           ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; reset                    ; PIN_B8            ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-+--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                  ;
++---------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CarCounter:inst|OR1 ; LCCOMB_X50_Y14_N20 ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; CarCounter:inst|OR2 ; LCCOMB_X19_Y1_N20  ; 3       ; Clock        ; yes    ; Global Clock         ; GCLK17           ; --                        ;
+; clk                 ; PIN_AB9            ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; reset               ; PIN_B8             ; 6       ; Async. clear ; no     ; --                   ; --               ; --                        ;
++---------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                         ;
-+--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                     ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CarCounter:inst17|inst21 ; LCCOMB_X25_Y1_N20 ; 3       ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
-+--------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                    ;
++---------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CarCounter:inst|OR2 ; LCCOMB_X19_Y1_N20 ; 3       ; 0                                    ; Global Clock         ; GCLK17           ; --                        ;
++---------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------+
-; Routing Usage Summary                          ;
-+-----------------------+------------------------+
-; Routing Resource Type ; Usage                  ;
-+-----------------------+------------------------+
-; Block interconnects   ; 54 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 33 / 5,382 ( < 1 % )   ;
-; C4 interconnects      ; 76 / 106,704 ( < 1 % ) ;
-; Direct links          ; 3 / 148,641 ( < 1 % )  ;
-; Global clocks         ; 1 / 20 ( 5 % )         ;
-; Local interconnects   ; 11 / 49,760 ( < 1 % )  ;
-; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 19 / 5,406 ( < 1 % )   ;
-; R4 interconnects      ; 81 / 147,764 ( < 1 % ) ;
-+-----------------------+------------------------+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 58 / 148,641 ( < 1 % )  ;
+; C16 interconnects     ; 23 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 104 / 106,704 ( < 1 % ) ;
+; Direct links          ; 4 / 148,641 ( < 1 % )   ;
+; Global clocks         ; 1 / 20 ( 5 % )          ;
+; Local interconnects   ; 11 / 49,760 ( < 1 % )   ;
+; NSLEEPs               ; 0 / 500 ( 0 % )         ;
+; R24 interconnects     ; 24 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 68 / 147,764 ( < 1 % )  ;
++-----------------------+-------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1082,15 +1082,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-----------------------------+
 ; Number of Logic Elements  (Average = 5.14) ; Number of LABs  (Total = 7) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 3                           ;
-; 2                                          ; 1                           ;
+; 1                                          ; 2                           ;
+; 2                                          ; 2                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
 ; 5                                          ; 0                           ;
 ; 6                                          ; 1                           ;
 ; 7                                          ; 0                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 1                           ;
+; 8                                          ; 1                           ;
+; 9                                          ; 0                           ;
 ; 10                                         ; 0                           ;
 ; 11                                         ; 0                           ;
 ; 12                                         ; 0                           ;
@@ -1117,15 +1117,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of Signals Sourced  (Average = 6.29) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 3                           ;
-; 2                                           ; 1                           ;
+; 1                                           ; 2                           ;
+; 2                                           ; 2                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 1                           ;
+; 8                                           ; 1                           ;
+; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
@@ -1150,15 +1150,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of Signals Sourced Out  (Average = 4.29) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 3                           ;
-; 2                                               ; 1                           ;
+; 1                                               ; 2                           ;
+; 2                                               ; 2                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 1                           ;
 ; 7                                               ; 0                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 1                           ;
+; 8                                               ; 1                           ;
+; 9                                               ; 0                           ;
 ; 10                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
@@ -1166,12 +1166,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 2.29) ; Number of LABs  (Total = 7) ;
+; Number of Distinct Inputs  (Average = 2.43) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 2                           ;
-; 3                                           ; 4                           ;
+; 2                                           ; 1                           ;
+; 3                                           ; 5                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1244,18 +1244,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_f              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_g              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_dp             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MREDN              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MREDS              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MYELLOWS           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MYELLOWN           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MGREENS            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; MGREENN            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SREDN              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SREDS              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SYELLOWN           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SYELLOWS           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SGREENN            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SGREENS            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_a_car          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_b_car          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_c_car          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1264,10 +1252,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_f_car          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_g_car          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; seg_dp_car         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; R11                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; R12                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y11                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y12                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; G11                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; G12                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; R21                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; R22                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y21                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y22                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; G21                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; G22                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sensorW            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sensorE            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sensor1            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sensor2            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1313,22 +1313,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; sensorE              ; 3.3               ;
-; clk,I/O         ; sensorE              ; 1.8               ;
+; clk             ; sensor1              ; 2.4               ;
+; clk,I/O         ; sensor1              ; 1.3               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                           ;
-+---------------------------+-------------------------+-------------------+
-; Source Register           ; Destination Register    ; Delay Added in ns ;
-+---------------------------+-------------------------+-------------------+
-; TLController:inst10|inst7 ; CarCounter:inst17|inst4 ; 3.679             ;
-; TLController:inst10|inst6 ; CarCounter:inst17|inst4 ; 3.296             ;
-; reset                     ; CarCounter:inst17|inst4 ; 1.837             ;
-+---------------------------+-------------------------+-------------------+
++------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                    ;
++-----------------------+----------------------+-------------------+
+; Source Register       ; Destination Register ; Delay Added in ns ;
++-----------------------+----------------------+-------------------+
+; TLController:inst2|Q1 ; CarCounter:inst|Q2   ; 2.685             ;
+; TLController:inst2|Q2 ; CarCounter:inst|Q2   ; 2.372             ;
+; reset                 ; CarCounter:inst|Q2   ; 1.324             ;
++-----------------------+----------------------+-------------------+
 Note: This table only shows the top 3 path(s) that have the largest delay added for hold.
 
 

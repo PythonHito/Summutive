@@ -36,54 +36,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "MREDN",
-					"strict" : false
-				},
-				{
-					"name" : "MREDS",
-					"strict" : false
-				},
-				{
-					"name" : "MYELLOWS",
-					"strict" : false
-				},
-				{
-					"name" : "MYELLOWN",
-					"strict" : false
-				},
-				{
-					"name" : "MGREENS",
-					"strict" : false
-				},
-				{
-					"name" : "MGREENN",
-					"strict" : false
-				},
-				{
-					"name" : "SREDN",
-					"strict" : false
-				},
-				{
-					"name" : "SREDS",
-					"strict" : false
-				},
-				{
-					"name" : "SYELLOWN",
-					"strict" : false
-				},
-				{
-					"name" : "SYELLOWS",
-					"strict" : false
-				},
-				{
-					"name" : "SGREENN",
-					"strict" : false
-				},
-				{
-					"name" : "SGREENS",
-					"strict" : false
-				},
-				{
 					"name" : "seg_a_car",
 					"strict" : false
 				},
@@ -116,6 +68,54 @@
 					"strict" : false
 				},
 				{
+					"name" : "R11",
+					"strict" : false
+				},
+				{
+					"name" : "R12",
+					"strict" : false
+				},
+				{
+					"name" : "Y11",
+					"strict" : false
+				},
+				{
+					"name" : "Y12",
+					"strict" : false
+				},
+				{
+					"name" : "G11",
+					"strict" : false
+				},
+				{
+					"name" : "G12",
+					"strict" : false
+				},
+				{
+					"name" : "R21",
+					"strict" : false
+				},
+				{
+					"name" : "R22",
+					"strict" : false
+				},
+				{
+					"name" : "Y21",
+					"strict" : false
+				},
+				{
+					"name" : "Y22",
+					"strict" : false
+				},
+				{
+					"name" : "G21",
+					"strict" : false
+				},
+				{
+					"name" : "G22",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
@@ -124,11 +124,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "sensorW",
+					"name" : "sensor1",
 					"strict" : false
 				},
 				{
-					"name" : "sensorE",
+					"name" : "sensor2",
 					"strict" : false
 				}
 			]
